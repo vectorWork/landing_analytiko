@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestión de procesos y recursos de seguridad en la toma de decisiones basadas en inteligencia."/>
+    <meta name="copyright" content="Analytiko®"/>
+    <meta name="robots" content="index"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css-contacto.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdJW9kpAAAAADEnA_L9r8J-BfLFJy-IIYIoXQtk"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../Contacto/javaScriptContacto.js"></script>
+ 
+      <link rel="icon" href="../Assets/icon_paginaweb.png">
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="nav">
+            <div class="logotipo">
+                <a href="../Home/index.html">
+                <img src="../Assets/Logo-Grupo-Analytiko-Diapo.png" alt="logo">
+            </a>
+            </div>
+                
+                
+                <ul class="nav-menu">
+                <li class="nav-menu-item"> 
+                    <a href="../Home/index.html" class="nav-menu-link nav-link">INICIO</a>
+                </li>
+                
+                <div id="buttonProducts">
+                    <li class="nav-menu-item"> 
+                        <a href="../Productos_y_servicios/Productos_y_servicios.html" class="nav-menu-link nav-link">PRODUCTOS Y SERVICIOS <img src="../Assets/mostrar-productos.svg" alt="mostrar-productos" class="mostrar-productos"></a>
+                        <div id="optionProducts" class="optionCard hideOptions">
+                           
+                            <div>
+                                <a href="../Producto_Analytiko/Producto_Analytiko.html" class="enlace-contacto">
+                                    <p class="cursorPointer">Analytiko</p>
+                                </a>
+                            </div>
+                        
+                            <div>
+                                    <a href="../Forsker/Producto_Forsker.html" class="enlace-contacto">
+                                        <p class="cursorPointer">Forsker</p>
+                                    </a>
+                            </div>
+                            <div>
+                                    <a href="../Producto_Immersion/Producto_Immersion.html" class="enlace-contacto">
+                                        <p class="cursorPointer-immersion">Immersion</p>
+                                    </a>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                
+                
+                <div id="buttonProducts2">
+                  <li class="nav-menu-item">
+                    <a href="../Casos_de_uso/Casos_de_uso.html" class="nav-menu-link nav-link"
+                      >CASOS DE USO
+                      <img
+                        src="../Assets/mostrar-productos.svg"
+                        alt="mostrar-productos"
+                        class="mostrar-productos"
+                    /></a>
+                    <div id="optionCases" class="optionCard hideOptions">
+                      <div>
+                        <a
+                          href="../Casos_de_uso/Casos_de_uso.html#investigacionFraudesFinancieros"
+                          class="enlace-contacto"
+                        >
+                          <p class="cursorPointer">Investigación de fraudes financieros</p>
+                        </a>
+                      </div>
+      
+                      <div>
+                        <a href="../Casos_de_uso/Casos_de_uso.html#investigacionAsuntosInternos" class="enlace-contacto">
+                          <p class="cursorPointer">Investigaciones de asuntos internos</p>
+                        </a>
+                      </div>
+                      <div>
+                        <a
+                          href="../Casos_de_uso/Casos_de_uso.html#investigacionLavadoActivos"
+                          class="enlace-contacto"
+                        >
+                          <p class="cursorPointer-immersion">Investigación de lavado de activos y debida inteligencia</p>
+                        </a>
+                      </div>
+    
+                    <div>
+                      <a
+                        href="../Casos_de_uso/Casos_de_uso.html#gestionIncidenciasSeguridad"
+                        class="enlace-contacto"
+                      >
+                        <p class="cursorPointer">Gestión de incidencias de seguridad</p>
+                      </a>
+                    </div>
+    
+                    <div>
+                      <a
+                        href="../Casos_de_uso/Casos_de_uso.html#programasSeguridadInteligencia"
+                        class="enlace-contacto"
+                      >
+                        <p class="cursorPointer">Programas de seguridad basada en inteligencia</p>
+                      </a>
+                    </div>
+                  </div>
+                  </li>
+                </div>
+               
+                <li > 
+                    <a href="./Contacto_Analytiko_web.html" class="boton-contacto">CONTÁCTANOS</a>
+                </li>
+                
+            </ul>
+            <button class="nav-toggle"  id="toggleModalButton">
+                <img src="../Assets/menu-hamburguesa.svg" alt="">
+            </button>
+
+
+            <!--Menu mobile-->
+
+            <div class="modal" id="myModal">
+              <div class="sectionOptionMenu">
+                <a href="../Home/index.html" class="toggle-productos">
+                  <p class="pOptionPhone">INICIO</p>
+                </a>
+              </div>
+              <div class="separator"></div>
+
+              <div class="sectionOptionMenu botones-desplegables" data-target="productService">
+                  <p class="pOptionPhone">PRODUCTOS Y SERVICIOS</p>
+                 
+              </div>
+              <div class="displayNone productsClass" data-toggle="productService">
+                  <div>
+                      <a class="cursorPointer " href="../Producto_Analytiko/Producto_Analytiko.html"><p class="textOphone">Analytiko</p></a> 
+      
+                  </div>
+                  <div class="separadorProducts"></div>
+
+                  <div class="marginButton">
+                      <a class="cursorPointer " href="../Forsker/Producto_Forsker.html" class="toggle-productos"> <p class="textOphone">Forsker</p></a>
+                  </div>
+                  <div class="separadorProducts"></div>
+      
+                  <div class="marginButton">
+                      <a class="cursorPointer " href="../Producto_Immersion/Producto_Immersion.html" class="toggle-productos"> <p class="textOphone">Immersion</p>  </a>
+      
+                  </div>
+                  <div class="separadorProducts"></div>
+
+              </div>
+              <div class="separator"></div>
+
+              <div class="sectionOptionMenu botones-desplegables" data-target="caseUse">
+                <p class="pOptionPhone">CASOS DE USO</p>
+               
+            </div>
+            <div class="separator"></div>
+
+              <div class="displayNone productsClass" data-toggle="caseUse">
+                <div>
+                   <a class="cursorPointer"  href="../Casos_de_uso/Casos_de_uso.html#investigacionFraudesFinancieros"> <p class="textOphone">Investigación de fraudes financieros</p></a> 
+                </div>
+                <div class="separadorProducts"></div>
+
+                <div class="marginButton">
+                    <a class="cursorPointer"  href="../Casos_de_uso/Casos_de_uso.html#investigacionAsuntosInternos" class="toggle-productos"> <p  class="textOphone">Investigaciones de asuntos internos</p></a>
+                </div>
+                <div class="separadorProducts"></div>
+    
+                <div class="marginButton">
+                     <a  class="cursorPointer" href="../Casos_de_uso/Casos_de_uso.html#investigacionLavadoActivos" class="toggle-productos"><p  class="textOphone">Investigación de lavado de activos y debida inteligencia </p> </a>
+                </div>
+                <div class="separadorProducts"></div>
+
+                <div class="marginButton">
+                   <a  class="cursorPointer" href="../Casos_de_uso/Casos_de_uso.html#gestionIncidenciasSeguridad" class="toggle-productos"><p  class="textOphone">Gestión de incidencias de seguridad </p> </a>
+              <div class="separadorProducts"></div>
+    
+              </div>
+              <div class="marginButton">
+                 <a  class="cursorPointer" href="../Casos_de_uso/Casos_de_uso.html#programasSeguridadInteligencia" class="toggle-productos"><p  class="textOphone">Programas de seguridad basada en inteligencia</p> </a>
+            <div class="separadorProducts"></div>
+    
+            </div>
+            </div>
+            <div class="buttonContact">
+              <a href="./Contacto_Analytiko_web.html" >
+                <button class="cta-contacto-modal">CONTÁCTANOS</button>
+              </a>
+            </div>
+          </div>
+
+    </nav>
+        
+    </header>
+
+<!--Migas de pan-->
+
+<ul class="breadcrumbs">
+    <li class="breadcrumbs-item">
+            <a href="../Home/index.html" class="breadcrumbs-link breadcrumbs-home"><img src="../Assets/home.svg" alt="" class="icono-home">Home</a>
+    </li>
+
+    <li class="breadcrumbs-item">
+            <a href="" class="breadcrumbs-link breadcrumbs-item-active">Contacto</a>
+    </li>
+</ul>
+
+    <!-- Contacto -->
+
+    <section class="section__container contacto-container">
+        <h2 class="section__header">CONTÁCTANOS</h2>
+        
+        
+        <div class="contenedor-1">
+
+            <!-- Formulario -->
+    
+            <div class="contenedor-2">
+              <div class="subtitulo-contacto">
+                  <h4><i class="fa-solid fa-caret-down" style="color: #f9ac54;"></i>ENVÍANOS UN MENSAJE</h4>
+              </div>
+              <div class="form-container formfields">
+                  <form  id="contact" class="contact"  method="POST">
+                    <input type="hidden" name="recaptchaResponse" id="recaptchaResponse">
+                    <label for="nombre">Nombre</label>
+                       
+                    <div class="form-group">
+                          <input  type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required="" >
+                      </div>
+                      <p id="nombreRequired"  class="requiredInput hide ">* El nombre es requerido</p>
+
+                      <label for="empresa">Empresa</label>
+
+                      <div class="form-group">
+                        <input  type="text" id="empresa" name="empresa" placeholder="Ingrese nombre de su Empresa" required="" >
+
+                    </div>
+                    <p id="empresaRequired"  class="requiredInput hide ">* El nombre de la empresa es requerido</p>
+                    <label for="correo">Correo electrónico</label>
+
+                      <div class="form-group">
+                          <input    type="text" id="correo" name="correo"  placeholder="Ingrese correo electronico de su empresa" required="">
+
+                      </div>
+                      <p id="correoRequired"  class="requiredInput requiredInputEmpresa hide ">* El correo de la empresa es requerido</p>
+                      <p id="inputEmailFormat"  class="emailValidation hide ">* El correo debe tener un formato como "ejemplo@correo.com"</p>
+                      
+                      <label for="ayuda">¿Cómo podemos ayudarte?</label>
+
+                      <div class="form-group form-group-final">
+                              <textarea  placeholder="Ingrese su consulta" type="text" id="ayuda" name="ayuda" required="" class=" ayuda"></textarea>
+                    
+                          </div>
+                          <p id="ayudaRequired"  class="requiredInput requiredInputConsulta hide ">* La consulta es requerida</p>
+                          <input type="hidden" name="_captcha" value="false">
+                          <input type="hidden" name="_template" value="table">
+                          <!-- <input type="hidden" name="_cc" value="info@analytikogroup.com"> -->
+                          <input type="hidden" name="_next" value="./Contacto/Contacto_Analytiko_web.html">
+                          <div id="example3" class="invisible"></div>
+                          
+                          <p class="requiredAll hide" id="allRequired">* Todos los campos son requeridos</p>
+                          <button class="form-submit-btn"  type="submit">ENVIAR MENSAJE</button>
+                          
+                  </form>
+                  <p class="text-center">
+                    <small>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</small>
+                </p>
+              </div>
+              <div id="alert" class="alertText text-center"></div>
+          </div>
+            <!--Información de contacto-->
+
+            <div class="contacto-info">
+                <div class="box">
+                    
+                    <div class="text-titulo">
+                        <h4>INFORMACIÓN DE CONTACTO</h4>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone" style="color: #d79447;"></i>
+                      <a href="https://www.google.com/maps/place/Torre+de+Madrid,+Pl.+de+Espa%C3%B1a,+18,+28008+Madrid,+Espa%C3%B1a/@40.4243122,-3.7149502,17z/data=!3m1!4b1!4m6!3m5!1s0xd4228656f13036d:0x1afa7b8893134fea!8m2!3d40.4243122!4d-3.7123753!16zL20vMGcyaDd2?entry=ttu" class="icono-link" target="_blank">
+                    <img src="../Contacto/Assets/direccion_icono.svg" alt="" class="direccion-icono"></div>
+                  </a>
+                    <div class="text-info text-info1">
+                      <a href="https://www.google.com/maps/place/Torre+de+Madrid,+Pl.+de+Espa%C3%B1a,+18,+28008+Madrid,+Espa%C3%B1a/@40.4243122,-3.7149502,17z/data=!3m1!4b1!4m6!3m5!1s0xd4228656f13036d:0x1afa7b8893134fea!8m2!3d40.4243122!4d-3.7123753!16zL20vMGcyaDd2?entry=ttu" class="icono-link" target="_blank">
+                        <h3 class="direccion-texto link_paginas">Dirección</h3>
+                      </a>
+                      <a href="https://www.google.com/maps/place/Torre+de+Madrid,+Pl.+de+Espa%C3%B1a,+18,+28008+Madrid,+Espa%C3%B1a/@40.4243122,-3.7149502,17z/data=!3m1!4b1!4m6!3m5!1s0xd4228656f13036d:0x1afa7b8893134fea!8m2!3d40.4243122!4d-3.7123753!16zL20vMGcyaDd2?entry=ttu" class="icono-link" target="_blank">
+                        <p class="parrafo-direccion">Madrid, España.</p>
+                      </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope" style="color: #d79447;"></i>
+                      <a href="https://www.instagram.com/analytiko" class="icono-link" target="_blank">
+                    <img src="../Contacto/Assets/Instagram_icono.svg" alt="" class="instagram-icono"></div>
+                  </a>
+                    <div class="text-info">
+                       
+                        <a href="https://www.instagram.com/analytiko" target="_blank" class="link_paginas direccion-texto">Instagram</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa-brands fa-linkedin-in" style="color: #d79447;"></i></i>
+                      <a href="https://www.linkedin.com/company/grupo-analytiko/" class="icono-link" target="_blank">
+                    <img src="../Contacto/Assets/linkedin_icono.svg" alt="" class="linkedin-icono"></div>
+                  </a>
+                    <div class="text-info">
+                        
+                        <a href="https://www.linkedin.com/company/grupo-analytiko/" target="_blank" class="link_paginas direccion-texto">LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa-brands fa-linkedin-in" style="color: #d79447;"></i></i>
+                      <a href="https://twitter.com/GrupoAnalytiko" class="icono-link" target="_blank">
+                    <img src="../Contacto/Assets/twitter_icono.svg" alt="" class="twitter-icono"></div>
+                  </a>
+                    <div class="text-info">
+                        
+                        <a href="https://twitter.com/GrupoAnalytiko" target="_blank" class="link_paginas direccion-texto">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+      
+
+    </section>
+
+     <!--Separador hr-->
+    
+     <div class="separador-final">
+        <hr class="hr1">
+        </div>
+    
+    <!--Footer-->
+    
+    <div class="pie-de-pagina">
+      <footer>
+        <div class="footer1">
+          <div class="logo-redes">
+          <img
+            src="../Assets/Logo-Grupo-Analytiko-Diapo.png"
+            alt="logo-grupo-analytiko"
+            class="logo-footer"/>
+          
+            <div class="icono-redes">
+          <a
+            href="https://twitter.com/GrupoAnalytiko"
+            target="_blank"
+            class="linea"
+          >
+            <img
+              src="../Assets/twitter.svg"
+              alt="twitter"
+              class="iconos-footer twitter"
+            />
+          </a>
+    
+          <a
+            href="https://www.linkedin.com/company/grupo-analytiko/"
+            target="_blank"
+            class="linea"
+          >
+            <img
+              src="../Assets/linkedin.svg"
+              alt="linkedin"
+              class="iconos-footer"
+            />
+          </a>
+    
+          <a href="https://www.instagram.com/analytiko/" target="_blank">
+            <img
+              src="../Assets/Instagram.svg"
+              alt="instagram"
+              class="icono-instagram"
+            />
+          </a>
+        </div>
+        </div>
+    
+          <p class="direccion">
+          Madrid, España.
+          </p>
+        </div>
+        
+            <div class="footer-2">
+              <h3 class="compañia">COMPAÑÍA</h3>
+              <a href="../Compania/compania.html">
+                <p class="link-productos">Sobre nosotros</p>
+              </a>
+        
+              <h3>PRODUCTOS Y SERVICIOS</h3>
+              <a href="../Producto_Analytiko/Producto_Analytiko.html">
+                <p class="link-productos">Analytiko</p>
+              </a>
+        
+              <a href="../Forsker/Producto_Forsker.html"
+                ><p class="link-productos">Försker</p>
+              </a>
+        
+              <a href="../Producto_Immersion/Producto_Immersion.html">
+                <p class="link-productos">Immersion</p>
+              </a>
+            </div>
+        
+            <div class="footer-3">
+              <h3 class="casos-de-uso">CASOS DE USO</h3>
+              <ul class="casos-li">
+                <a href="../Casos_de_uso/Casos_de_uso.html#investigacionFraudesFinancieros"  class="link-productos  ">
+                <li class="botones-desplegables" data-target="investigacionFraudesFinancieros">Investigación de fraudes financieros.</li>
+              </a>
+        
+              <a href="../Casos_de_uso/Casos_de_uso.html#investigacionAsuntosInternos"   class="link-productos ">
+                <li class="botones-desplegables" data-target="investigacionAsuntosInternos">Investigaciones de asuntos internos.</li>
+              </a>
+        
+               
+        
+                <a href="../Casos_de_uso/Casos_de_uso.html#investigacionLavadoActivos"   class="link-productos ">
+                <li class="botones-desplegables" data-target="investigacionLavadoActivos">
+                  Investigación de lavado de activos y <br />
+                  debida diligencia.
+                </li>
+              </a>
+        
+              <a href="../Casos_de_uso/Casos_de_uso.html#gestionIncidenciasSeguridad"  class="link-productos ">
+                <li class="botones-desplegables" data-target="gestionIncidenciasSeguridad" >
+                  Gestión de incidencias de seguridad
+                </li>
+        
+        
+                <a href="../Casos_de_uso/Casos_de_uso.html#programasSeguridadInteligencia"   class="link-productos ">
+                <li class="botones-desplegables" data-target="programasSeguridadInteligencia">
+                  Programas de seguridad basada en <br />
+                  inteligencia.
+                </li>
+              </a>
+              </ul>
+            </div>
+          </footer>
+    <!--Separador hr-->
+    
+    <div class="separador-final-2">
+    <hr class="hr1">
+    </div>
+
+    <!--Seccion final del footer-->
+    <div class="footer-final">
+    
+
+      <div class="footer-4">
+        <img src="../Assets/TM.svg" alt="tm" class="tm">
+        <p class="tm-analytiko">Analytiko 2023</p>
+        <p>Política de privacidad</p>
+    </div>
+    </div>
+</div>
+ 
+
+</body>
+</body>
+</html>

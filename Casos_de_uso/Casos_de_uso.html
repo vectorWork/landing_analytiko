@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gestión de procesos y recursos de seguridad en la toma de decisiones basadas en inteligencia."/>
+    <meta name="copyright" content="Analytiko®"/>
+    <meta name="robots" content="index"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Casos de uso</title>
+    <link rel="stylesheet" href="Casos-de-uso.css" />
+    <script src="javaScriptCasosUso.js"></script>
+    <link rel="icon" href="../Assets/icon_paginaweb.png">
+  </head>
+  <body>
+    <!--Header-->
+
+    <header class="header">
+      <nav class="nav">
+        <div class="logotipo">
+          <a href="../Home/index.html">
+          <img src="../Assets/Logo-Grupo-Analytiko-Diapo.png"
+            alt="logo"/>
+        </a>
+        </div>
+
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="../Home/index.html" class="nav-menu-link nav-link">INICIO</a>
+          </li>
+          <div id="buttonProducts">
+            <li class="nav-menu-item">
+              <a href="../Productos_y_servicios/Productos_y_servicios.html" class="nav-menu-link nav-link"
+                >PRODUCTOS Y SERVICIOS
+                <img
+                  src="../Assets/mostrar-productos.svg"
+                  alt="mostrar-productos"
+                  class="mostrar-productos"
+              /></a>
+              <div id="optionProducts" class="optionCard hideOptions">
+                <div>
+                  <a
+                    href="../Producto_Analytiko/Producto_Analytiko.html"
+                    class="enlace-contacto"
+                  >
+                    <p class="cursorPointer">Analytiko</p>
+                  </a>
+                </div>
+
+                <div>
+                  <a href="../Forsker/Producto_Forsker.html" class="enlace-contacto">
+                    <p class="cursorPointer">Forsker</p>
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="../Producto_Immersion/Producto_Immersion.html"
+                    class="enlace-contacto"
+                  >
+                    <p class="cursorPointer-immersion">Immersion</p>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </div>
+
+          <div id="buttonProducts2">
+            <li class="nav-menu-item">
+              <a href="./Casos_de_uso.html" class="nav-menu-link nav-link"
+                >CASOS DE USO
+                <img
+                  src="../Assets/mostrar-productos.svg"
+                  alt="mostrar-productos"
+                  class="mostrar-productos"
+              /></a>
+              <div id="optionCases" class="optionCard hideOptions" >
+                <div class="botones-desplegables"  >
+                  <a
+                    href="#investigacionFraudesFinancieros"
+                    class="enlace-contacto"
+                  >
+                    <p class="cursorPointer"  
+                    data-svg-id="investigacionF" data-target="investigacionFraudesFinancieros">Investigación de fraudes financieros</p>
+                  </a>
+                </div>
+
+                <div class="botones-desplegables">
+                  <a href="#investigacionAsuntosInternos" class="enlace-contacto">
+                    <p class="cursorPointer" 
+                    data-svg-id="investigacionAs" 
+                  
+                    data-target="investigacionAsuntosInternos">Investigaciones de asuntos internos</p>
+                  </a>
+                </div>
+                <div class="botones-desplegables">
+                  <a
+                    href="#investigacionLavadoActivos"
+                    class="enlace-contacto"
+                  >
+                    <p class="cursorPointer-immersion" 
+                    data-svg-id="investigacionLavad" 
+                    data-target="investigacionLavadoActivos">Investigación de lavado de activos y debida inteligencia</p>
+                  </a>
+                </div>
+
+              <div class="botones-desplegables">
+                <a
+                  href="#gestionIncidenciasSeguridad"
+                  class="enlace-contacto"
+                >
+                  <p class="cursorPointer" 
+                  data-svg-id="gestionIncidencias" 
+                  data-target="gestionIncidenciasSeguridad">Gestión de incidencias de seguridad</p>
+                </a>
+              </div>
+
+              <div class="botones-desplegables">
+                <a
+                  href="#programasSeguridadInteligencia"
+                  class="enlace-contacto"
+                >
+                  <p class="cursorPointer" 
+                  data-svg-id="programasSeg" 
+                  data-target="programasSeguridadInteligencia">Programas de seguridad basada en inteligencia</p>
+                </a>
+              </div>
+            </div>
+            </li>
+          </div>
+
+          <li>
+            <a
+              href="../Contacto/Contacto_Analytiko_web.html"
+              class="boton-contacto"
+              >CONTÁCTANOS</a
+            >
+          </li>
+        </ul>
+        <button class="nav-toggle" id="toggleModalButton">
+          <img
+            src="../Assets/menu-hamburguesa.svg"
+            alt=""
+          />
+        </button>
+
+       <!--Menu mobile-->
+
+       <div class="modal" id="myModal">
+        <div class="sectionOptionMenu">
+          <a href="../Home/index.html" class="toggle-productos">
+            <p class="pOptionPhone">INICIO</p>
+        <div class="separator"></div>
+
+          </a>
+        </div>
+
+        <div class="sectionOptionMenu botones-desplegables" data-target="productService">
+            <p class="pOptionPhone">PRODUCTOS Y SERVICIOS</p>
+            <div class="separator"></div>
+           
+        </div>
+        <div class="displayNone productsClass" data-toggle="productService">
+          <div>
+              <a class="cursorPointer " href="../Producto_Analytiko/Producto_Analytiko.html"><p class="textOphone">Analytiko</p></a> 
+
+          </div>
+          <div class="separadorProducts"></div>
+
+          <div>
+              <a class="cursorPointer " href="../Forsker/Producto_Forsker.html" class="toggle-productos"> <p class="textOphone">Forsker</p></a>
+          </div>
+          <div class="separadorProducts"></div>
+
+          <div>
+              <a class="cursorPointer " href="../Producto_Immersion/Producto_Immersion.html" class="toggle-productos"> <p class="textOphone">Immersion</p>  </a>
+
+          </div>
+          <div class="separadorProducts"></div>
+
+      </div>
+        <div class="sectionOptionMenu botones-desplegables" data-target="caseUse">
+          <p class="pOptionPhone">CASOS DE USO</p>
+          <div class="separator"></div>
+         
+      </div>
+      <div class="displayNone productsClass" data-toggle="caseUse">
+        <div>
+           <a class="cursorPointer close"  href="../Casos_de_uso/Casos_de_uso.html#investigacionFraudesFinancieros"> <p class="textOphone">Investigación de fraudes financieros</p></a> 
+        </div>
+        <div class="separadorProducts"></div>
+
+        <div class="marginButton">
+            <a class="cursorPointer close"  href="../Casos_de_uso/Casos_de_uso.html#investigacionAsuntosInternos" class="toggle-productos"> <p  class="textOphone">Investigaciones de asuntos internos</p></a>
+        </div>
+        <div class="separadorProducts"></div>
+
+        <div class="marginButton">
+             <a  class="cursorPointer close" href="../Casos_de_uso/Casos_de_uso.html#investigacionLavadoActivos" class="toggle-productos"><p  class="textOphone">Investigación de lavado de activos y debida inteligencia </p> </a>
+        </div>
+        <div class="separadorProducts"></div>
+
+        <div class="marginButton">
+           <a  class="cursorPointer close" href="../Casos_de_uso/Casos_de_uso.html#gestionIncidenciasSeguridad" class="toggle-productos"><p  class="textOphone">Gestión de incidencias de seguridad </p> </a>
+      <div class="separadorProducts"></div>
+
+      </div>
+      <div class="marginButton">
+         <a  class="cursorPointer close" href="../Casos_de_uso/Casos_de_uso.html#programasSeguridadInteligencia" class="toggle-productos"><p  class="textOphone">Programas de seguridad basada en inteligencia</p> </a>
+    <div class="separadorProducts"></div>
+
+    </div>
+    </div>
+        <div>
+        <div class="buttonContact">
+          <a href="../Contacto/Contacto_Analytiko_web.html">
+            <button class="cta-contacto-modal">CONTÁCTANOS</button>
+          </a>
+        </div>
+    </div>
+
+</nav>
+    
+</header>
+
+    <!--Migas de pan-->
+
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item">
+        <a href="../Home/index.html" class="breadcrumbs-link breadcrumbs-home"><img
+            src="../Assets/home.svg"
+            alt=""
+            class="icono-home"
+          />Home</a
+        >
+      </li>
+
+      <li class="breadcrumbs-item">
+        <a href="" class="breadcrumbs-link breadcrumbs-item-active"
+          >Casos de uso</a
+        >
+      </li>
+    </ul>
+
+    <!--Hero, seccion 1-->
+
+    <section id="hero">
+      <h1 class="hero-titulo">Casos de uso</h1>
+    </section>
+
+    <!--Casos de uso, section 3-->
+
+    <div class="contenedor-casos">
+      <!--caso 1-->
+      <div class="caso-1" id="investigacionFraudesFinancieros">
+        <button
+          class="botones-desplegables boton-ver-mas1"
+          data-target="investigacionFraudesFinancieros"
+          data-svg-id="investigacionF" 
+
+        >
+          Investigación de Fraudes Financieros
+          <div   class="contenedor-imagen3-otras">
+            <img
+            id="investigacionF"
+              src="../Assets/ver mas - 2.svg"
+              alt=""
+              class="ver-mas3 rotate-icon"
+            />
+          </div>
+        </button>
+
+        <div class="imagen-texto" data-toggle="investigacionFraudesFinancieros" >
+          <p class="parrafo-casos">
+            Actualmente existe mayor información disponible para los equipos de detección de fraudes, lo que significa que
+            encontrar la información correcta, verificarla, ver las señales en
+            ese "ruido" y hacer evaluaciones a partir de ellas es un desafío. Analytiko ayuda a los equipos de investigación de
+            fraudes en las áreas de aplicación de la ley, inteligencia
+            financiera y seguridad corporativa con: <br />-Bases de
+            conocimiento. <br />-Fusión de data propia y de terceros.
+            <br />-Integración de Modelos de IA a la medida de las necesidades.
+          </p>
+          <div class="contenedor-imagen1">
+            <img
+              src="./Assets/fraudes-financieros.png"
+              alt=""
+              class="imagen1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--caso 2-->
+      <div class="caso-2" id="investigacionAsuntosInternos">
+        <button
+          class="botones-desplegables boton-ver-mas2"
+          data-target="investigacionAsuntosInternos"
+          data-svg-id="investigacionAs" 
+        >
+          Investigaciones de Asuntos Internos
+          <div class="contenedor-imagen3-otras">
+            <img
+            id="investigacionAs"
+              src="../Assets/ver mas - 2.svg"
+              alt=""
+              class="ver-mas3 rotate-icon"
+            />
+          </div>
+        </button>
+
+        <div class="imagen-texto" data-toggle="investigacionAsuntosInternos">
+          <p class="parrafo-casos">
+            El riesgo de la amenaza interna siempre está presente dentro de las
+            empresas en cualquier sector, el impacto del fraude provocado por personal
+            interno en ocasiones es mucho mayor a otros tipos de fraudes que sufren las empresas. Un Departamento de Investigaciones
+            Internas robusto, con las herramientas necesarias para gestionar sus
+            casos de forma eficiente, así como observar y correlacionar estos
+            datos en conjunto, permitirá realizar análisis multidimensionales más profundos para ayudar a entender a
+            los investigadores patrones complejos de fraude interno.
+          </p>
+
+          <div class="contenedor-imagen2">
+            <img src="./Assets/asuntos-internos.png" alt="" class="imagen2" />
+          </div>
+        </div>
+      </div>
+
+      <!--caso 3-->
+      <div class="caso-2" id="investigacionLavadoActivos">
+        <button
+          class="botones-desplegables boton-ver-mas2"
+          data-target="investigacionLavadoActivos"
+          data-svg-id="investigacionLavad" 
+
+        >
+          Investigación de Lavado de Activos y Debida Diligencia
+          <div class="contenedor-imagen3-otras">
+            <img
+            id="investigacionLavad"
+
+            
+              src="../Assets/ver mas - 2.svg"
+              alt=""
+              class="ver-mas3 rotate-icon"
+            />
+          </div>
+        </button>
+
+        <div class="imagen-texto" data-toggle="investigacionLavadoActivos">
+          <p class="parrafo-casos">
+            Las instituciones financieras y las entidades reguladas deben
+            garantizar el cumplimiento de las regulaciones complejas y en
+            constante evolución que las rodean. Requisitos de evaluación
+            continua (CE) para; Antilavado de Dinero (AML), Conozca a su Cliente
+            (KYC) y Combate al Financiamiento del Terrorismo (CFT/CTF). Los
+            Oficiales de Cumplimiento contarán con herramientas de seguimiento
+            casos en tiempo real para un control transversal de todas las tareas
+            cumplidas en el proceso de análisis por parte de los investigadores.
+            La base de conocimiento consolidado permitirá realizar análisis de
+            datos para la búsqueda de los nuevos patrones utilizados por los
+            criminales.
+          </p>
+
+          <div class="contenedor-imagen2">
+            <img src="./Assets/lavado-activos.png" alt="" class="imagen2" />
+          </div>
+        </div>
+      </div>
+
+      <!--caso 4-->
+      <div class="caso-2" id="gestionIncidenciasSeguridad">
+        <button
+          class="botones-desplegables boton-ver-mas2"
+          data-target="gestionIncidenciasSeguridad"
+          data-svg-id="gestionIncidencias" 
+
+        >
+          Gestión de Incidencias de Seguridad
+          <div class="contenedor-imagen3-otras">
+            <img
+              id="gestionIncidencias"
+              src="../Assets/ver mas - 2.svg"
+              alt=""
+              class="ver-mas3 rotate-icon"
+            />
+          </div>
+        </button>
+
+        <div class="imagen-texto" data-toggle="gestionIncidenciasSeguridad">
+          <p class="parrafo-casos">
+            Día tras día las empresas están en riesgo de sufrir incidentes de
+            todo tipo, cibernéticos, de seguridad industrial, seguridad interna,
+            etc. Es muy probable que muchas empresas se conforman con mitigar su
+            impacto y no ir más allá probablemente tomándolo como un hecho
+            aislado. Un protocolo de seguridad bien establecido debe tomar en
+            cuenta que cualquier incidente, por muy casual o aislado que parezca
+            debe ser investigado, conocer el origen y las múltiples dimensiones
+            del incidente. Este conocimiento adquirido nos permitirá establecer
+            una clasificación de datos y características tanto del incidente
+            como de la investigación que permitirá identificarlo, con el fin de
+            mitigarlo. Grupo Analytiko ofrece las herramientas necesarias para
+            centralizar las alertas de incidencia, gestionar su remediación e
+            iniciar el proceso de investigación correspondiente, como un proceso
+            paralelo gestionado por la gerencia de investigación.
+          </p>
+
+          <div class="contenedor-imagen2">
+            <img
+              src="./Assets/incidencias-seguridad.png"
+              alt=""
+              class="imagen2"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--caso 5-->
+      <div class="caso-2" id="programasSeguridadInteligencia">
+        <button
+          class="botones-desplegables boton-ver-mas2"
+          data-target="programasSeguridadInteligencia"
+          data-svg-id="programasSeg" 
+
+        >
+          Programas de Seguridad basada en Inteligencia
+          <div class="contenedor-imagen3-otras">
+            <img
+            id="programasSeg"
+
+            
+              src="../Assets/ver mas - 2.svg"
+              alt=""
+              class="ver-mas3 rotate-icon"
+            />
+          </div>
+        </button>
+
+        <div class="imagen-texto" data-toggle="programasSeguridadInteligencia">
+          <p class="parrafo-casos caso-5">
+            Las estrategias de defensa actuales no están funcionando. Los
+            defensores deben pasar al ataque. Las organizaciones deben pasar a
+            programas de seguridad basados en la inteligencia que anticipen a
+            los adversarios y sus intenciones, vigilen la infraestructura que
+            construyen y aprendan de las organizaciones vulneradas. En Grupo
+            Analytiko creemos que independientemente de la función de seguridad
+            que desempeñe, la inteligencia le permitirá tomar decisiones más
+            acertadas y rápidas. La inteligencia como producto del análisis de
+            la información, no es un dominio separado de la seguridad, es el
+            contexto que le permite trabajar de forma más inteligente y
+            eficiente. Nuestros productos permiten a las empresas crear un
+            centro de fusión de datos e información para la recopilación de
+            información sobre de casos, almacenamiento de evidencias, creación
+            de informes de obtención de información, informes de resultados de
+            investigaciones, documentación del proceso de investigación y
+            aprobación de casos gestionados; creando de esta forma una base de
+            conocimientos que reforzará las funciones críticas de la seguridad y
+            sus flujos de trabajo.
+          </p>
+
+          <div class="contenedor-imagen2">
+            <img
+              src="./Assets/seguridad-inteligencia.png"
+              alt=""
+              class="imagen2 imagen-final"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--CTA final-->
+
+    <section id="cta-final">
+      <h1>Optimice los procesos de investigación y seguridad de su empresa</h1>
+      
+      <a href="../Contacto/Contacto_Analytiko_web.html" class="toggle-productos">
+      <button class="cta-contacto">CONTÁCTANOS</button>
+    </a>
+          </section>
+
+    <!--Separador hr-->
+
+    <div class="separador-final">
+      <hr class="hr1" />
+    </div>
+
+    <!--Footer-->
+
+    <div class="pie-de-pagina">
+      <footer>
+        <div class="footer1">
+          <div class="logo-redes">
+          <img
+            src="../Assets/Logo-Grupo-Analytiko-Diapo.png"
+            alt="logo-grupo-analytiko"
+            class="logo-footer"/>
+          
+            <div class="icono-redes">
+          <a
+            href="https://twitter.com/GrupoAnalytiko"
+            target="_blank"
+            class="linea"
+          >
+            <img
+              src="../Assets/twitter.svg"
+              alt="twitter"
+              class="iconos-footer twitter"
+            />
+          </a>
+    
+          <a
+            href="https://www.linkedin.com/company/grupo-analytiko/"
+            target="_blank"
+            class="linea"
+          >
+            <img
+              src="../Assets/linkedin.svg"
+              alt="linkedin"
+              class="iconos-footer"
+            />
+          </a>
+    
+          <a href="https://www.instagram.com/analytiko/" target="_blank">
+            <img
+              src="../Assets/Instagram.svg"
+              alt="instagram"
+              class="icono-instagram"
+            />
+          </a>
+        </div>
+        </div>
+    
+          <p class="direccion">
+          Madrid, España.
+          </p>
+        </div>
+
+    <div class="footer-2">
+      <h3 class="compañia">COMPAÑÍA</h3>
+      <a href="../Compania/compania.html">
+        <p class="link-productos">Sobre nosotros</p>
+      </a>
+
+      <h3>PRODUCTOS Y SERVICIOS</h3>
+      <a href="../Producto_Analytiko/Producto_Analytiko.html">
+        <p class="link-productos">Analytiko</p>
+      </a>
+
+      <a href="../Forsker/Producto_Forsker.html"
+        ><p class="link-productos">Försker</p>
+      </a>
+
+      <a href="../Producto_Immersion/Producto_Immersion.html">
+        <p class="link-productos">Immersion</p>
+      </a>
+    </div>
+   
+      <div class="footer-3">
+        <h3 class="casos-de-uso">CASOS DE USO</h3>
+        <ul class="casos-li">
+          <a href="../Casos_de_uso/Casos_de_uso.html#investigacionFraudesFinancieros"  class="link-productos  ">
+          <li class="botones-desplegables" data-target="investigacionFraudesFinancieros">Investigación de fraudes financieros.</li>
+        </a>
+  
+        <a href="../Casos_de_uso/Casos_de_uso.html#investigacionAsuntosInternos"   class="link-productos ">
+          <li class="botones-desplegables" data-target="investigacionAsuntosInternos">Investigaciones de asuntos internos.</li>
+        </a>
+  
+         
+  
+          <a href="../Casos_de_uso/Casos_de_uso.html#investigacionLavadoActivos"   class="link-productos ">
+          <li class="botones-desplegables" data-target="investigacionLavadoActivos">
+            Investigación de lavado de activos y <br />
+            debida diligencia.
+          </li>
+        </a>
+  
+        <a href="../Casos_de_uso/Casos_de_uso.html#gestionIncidenciasSeguridad"  class="link-productos ">
+          <li class="botones-desplegables" data-target="gestionIncidenciasSeguridad" >
+            Gestión de incidencias de seguridad
+          </li>
+  
+  
+          <a href="../Casos_de_uso/Casos_de_uso.html#programasSeguridadInteligencia"   class="link-productos ">
+          <li class="botones-desplegables" data-target="programasSeguridadInteligencia">
+            Programas de seguridad basada en <br />
+            inteligencia.
+          </li>
+        </a>
+        </ul>
+      </div>
+    </footer>
+
+      <!--Separador hr-->
+
+      <div class="separador-final-2">
+        <hr class="hr1" />
+      </div>
+
+      <!--Seccion final del footer-->
+
+      <div class="footer-final">
+        <div class="footer-4">
+          <img
+            src="../Assets/TM.svg"
+            alt="tm"
+            class="tm"
+          />
+          <p class="tm-analytiko">Analytiko 2023</p>
+          <p>Política de privacidad</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
