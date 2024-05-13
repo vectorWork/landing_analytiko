@@ -67,7 +67,7 @@ window.addEventListener('load', function () {
       grecaptcha.ready(function () {
         // Wait for the recaptcha to be ready
         grecaptcha
-          .execute('6LdJW9kpAAAAADEnA_L9r8J-BfLFJy-IIYIoXQtk', {
+          .execute('6LembdspAAAAAL5jqvxn3G-NHLXdZLlFyw1e0Lmy', {
             action: 'contact',
           }) // Execute the recaptcha
           .then(function (token) {
