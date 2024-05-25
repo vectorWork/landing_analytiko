@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
       grecaptcha.ready(function () {
         // Wait for the recaptcha to be ready
         grecaptcha
-          .execute('6LembdspAAAAAL5jqvxn3G-NHLXdZLlFyw1e0Lmy', {
+          .execute('6LcqYOcpAAAAAIMcIT3l1FSmS5mBnQhCrg3uazid', {
             action: 'contact',
           }) // Execute the recaptcha
           .then(function (token) {
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   'application/json';
                 axios
                   .post(
-                    'https://formsubmit.co/ajax/victorbri2112@gmail.com',
+                    'https://formsubmit.co/ajax/analytikogroup@gmail.com',
                     formData
                   )
                   .then((response) => {
@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     console.log(error);
                   });
                 //analytikogroup
-                // fetch('https://formsubmit.co/ajax/victorbri2112@gmail.com', {
+                // fetch('https://formsubmit.co/ajax/@gmail.com', {
                 //   method: 'POST',
                 //   headers: {
                 //     'Content-Type': 'application/json', // Indicate that you're sending JSON
