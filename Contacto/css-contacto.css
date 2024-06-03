@@ -16,6 +16,11 @@
   width: 303px;
   color: white;
 }
+
+.link-color {
+  color: #65afdd;
+}
+
 .pOptionPhone{pointer-events: none;
   height: 38px;
   padding-top: 20px;
