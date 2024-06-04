@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let recaptchaResponse =
               document.getElementById('recaptchaResponse');
             recaptchaResponse.value = token; // Set the recaptcha response
-            fetch('/form-post', {
+            fetch('/index.php', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json', // Indicate that you're sending JSON
