@@ -1,12 +1,17 @@
 <?php
+
 // Cambia 'TU-CLAVE-SECRETA' por tu clave secreta
 define('RECAPTCHA_V3_SECRET_KEY', getenv('RECAPTCHA_V3_SECRET_KEY'));
 
 // Verifica si la petición es POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $token = $_POST['token'];
+    // Obtén los datos JSON de la petición
+    $data = json_decode(file_get_contents('php://input'), true);
+
+    // Ahora puedes acceder a los valores de esta manera
+    $token = $data['token'];
     $data = array(
-        'secret' => RECAPTCHA_V3_SECRET_KEY,
+        'secret' => '6LcqYOcpAAAAAP4XScOuD3SVzxYFDtSlJureCwnT',
         'response' => $token
     );
 
@@ -26,11 +31,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($arrResponse['success'] && $arrResponse['score'] >= 0.5) {
         // Si entra aqui, es un humano, puedes procesar el formulario
         http_response_code(200);
-        echo json_encode(array('res' => 'ok!, eres un humano'));
+        echo json_encode(array('res' => 'ok!, eres un humano', 'arrResponse' => $arrResponse));
     } else {
         // Si entra aqui, es un robot....
         http_response_code(403);
-        echo json_encode(array('error' => 'Lo siento, parece que eres un Robot'));
+        echo json_encode(array('error' => 'Lo siento, parece que eres un Robot', 'arrResponse' => $arrResponse));
     }
 } else {
     // Si la petición no es POST, servir el archivo HTML
