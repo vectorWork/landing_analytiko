@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestión de procesos y recursos de seguridad en la toma de decisiones basadas en inteligencia."/>
+    <meta name="copyright" content="Analytiko®"/>
+    <meta name="robots" content="index"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Grupo Analytiko</title>
+    <link rel="stylesheet" href="cssCasoEstudio.css">
+    <script src="javaScriptCasoEstudio.js"></script>
+    <link rel="icon" href="../Assets/icon_paginaweb.png">
+</head>
+<body>
+   
+    <header class="header">
+        <nav class="nav">
+          <div class="logotipo">
+            <a href="../Home/index.html">
+            <img src="../Assets/Logo-Grupo-Analytiko-Diapo.png"
+              alt="logo"/>
+          </a>
+          </div>
+
+
+          <!-- ventana modal -->
+          
+          <div class="container-pop">
+            <div class="pop-up-wrap">
+        <div class="pop-up show">
+        
+            <img src="../Home/Assets/ANALYTIKO.png" alt="" class="imagen">
+            <img src="../Home/Assets/bannermobile.png" alt="" class="imagen-mobile ">
+            <img src="../Home/Assets/close.svg" alt="" class="icon-close" id="close">
+                    
+        </div>
+        </div>
+        </div>
+  
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="../Home/index.html" class="nav-menu-link nav-link">INICIO</a>
+            </li>
+            <div  id="buttonProducts">
+              <li class="nav-menu-item">
+                <a href="../Productos_y_servicios/Productos_y_servicios.html" class=" nav-menu-link nav-link"
+                  >PRODUCTOS Y SERVICIOS
+                  <img
+                    src="../Assets/mostrar-productos.svg"
+                    alt="mostrar-productos"
+                    class="mostrar-productos"
+                /></a>
+                <div class="divOptionHeader"> 
+                <div id="optionProducts" class="optionCard hideOptions">
+                  <div>
+                    <a
+                      href="../Producto_Analytiko/Producto_Analytiko.html"
+                      class="enlace-contacto"
+                    >
+                      <p class="cursorPointer">Analytiko</p>
+                    </a>
+                  </div>
+  
+                  <div>
+                    <a href="../Forsker/Producto_Forsker.html" class="enlace-contacto">
+                      <p class="cursorPointer">Forsker</p>
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="../Producto_Immersion/Producto_Immersion.html"
+                      class="enlace-contacto"
+                    >
+                      <p class="cursorPointer-immersion">Immersion</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              </li>
+            </div>
+            <!--Casos de uso menu-->
+
+            <div id="buttonProducts2">
+              <li class="nav-menu-item">
+                <a href="../Casos_de_uso/Casos_de_uso.html" class="nav-menu-link nav-link"
+                  >CASOS DE USO
+                  <img
+                    src="../Assets/mostrar-productos.svg"
+                    alt="mostrar-productos"
+                    class="mostrar-productos"
+                /></a>
+                <div class="divOptionHeader"> 
+                <div id="optionCases" class="optionCard hideOptions">
+                  <div>
+                    <a
+                      href="../Casos_de_uso/Casos_de_uso.html#investigacionFraudesFinancieros"
+                      class="enlace-contacto"
+                    >
+                      <p class="cursorPointer">Investigación de fraudes financieros</p>
+                    </a>
+                  </div>
+  
+                  <div>
+                    <a href="../Casos_de_uso/Casos_de_uso.html#investigacionAsuntosInternos" class="enlace-contacto">
+                      <p class="cursorPointer">Investigaciones de asuntos internos</p>
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="../Casos_de_uso/Casos_de_uso.html#investigacionLavadoActivos"
+                      class="enlace-contacto"
+                    >
+                      <p class="cursorPointer-immersion">Investigación de lavado de activos y debida inteligencia</p>
+                    </a>
+                  </div>
+
+                <div>
+                  <a
+                    href="../Casos_de_uso/Casos_de_uso.html#gestionIncidenciasSeguridad"
+                    class="enlace-contacto"
+                  >
+                    <p class="cursorPointer">Gestión de incidencias de seguridad</p>
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    href="../Casos_de_uso/Casos_de_uso.html#programasSeguridadInteligencia"
+                    class="enlace-contacto"
+                  >
+                    <p class="cursorPointer">Programas de seguridad basada en inteligencia</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+              </li>
+            </div>
+<!-- final casos de iuso men?u -->
+
+  
+            <li>
+              <a
+                href="../Contacto/Contacto_Analytiko_web.html"
+                class="boton-contacto"
+                >CONTÁCTANOS</a
+              >
+            </li>
+          </ul>
+          <button class="nav-toggle" id="toggleModalButton">
+            <img
+              src="../Assets/menu-hamburguesa.svg"
+              alt=""
+            />
+          </button>
+  
+         <!--Menu mobile-->
+  
+         <div class="modal" id="myModal">
+          <div class="sectionOptionMenu">
+            <a href="../Home/index.html" class="toggle-productos">
+              <p class="pOptionPhone">INICIO</p>
+            </a>
+              <div class="separator"></div>
+          </div>
+          <div class="sectionOptionMenu botones-desplegables" data-target="productService">
+              <p class="pOptionPhone">PRODUCTOS Y SERVICIOS</p>
+              <div class="separator"></div>
+             
+          </div>
+          <div class="displayNone productsClass" data-toggle="productService">
+            <div>
+                <a class="cursorPointer " href="../Producto_Analytiko/Producto_Analytiko.html"><p class="textOphone">Analytiko</p></a> 
+
+            </div>
+            <div class="separadorProducts"></div>
+
+            <div >
+                <a class="cursorPointer " href="../Forsker/Producto_Forsker.html" class="toggle-productos"> <p class="textOphone">Forsker</p></a>
+            </div>
+            <div class="separadorProducts"></div>
+
+            <div >
+                <a class="cursorPointer " href="../Producto_Immersion/Producto_Immersion.html" class="toggle-productos"> <p class="textOphone">Immersion</p>  </a>
+
+            </div>
+            <div class="separadorProducts"></div>
+
+        </div>
+          <div class="sectionOptionMenu botones-desplegables" data-target="caseUse">
+            <p class="pOptionPhone">CASOS DE USO</p>
+            <div class="separator"></div>
+           
+        </div>
+        <div class="displayNone productsClass" data-toggle="caseUse">
+          <div>
+             <a class="cursorPointer"  href="../Casos_de_uso/Casos_de_uso.html#investigacionFraudesFinancieros"> <p class="textOphone">Investigación de fraudes financieros</p></a> 
+          </div>
+          <div class="separadorProducts"></div>
+
+          <div >
+              <a class="cursorPointer"  href="../Casos_de_uso/Casos_de_uso.html#investigacionAsuntosInternos" class="toggle-productos"> <p  class="textOphone">Investigaciones de asuntos internos</p></a>
+          </div>
+          <div class="separadorProducts"></div>
+
+          <div >
+               <a  class="cursorPointer" href="../Casos_de_uso/Casos_de_uso.html#investigacionLavadoActivos" class="toggle-productos"><p  class="textOphone">Investigación de lavado de activos y debida inteligencia </p> </a>
+          </div>
+          <div class="separadorProducts"></div>
+
+          <div >
+             <a  class="cursorPointer" href="../Casos_de_uso/Casos_de_uso.html#gestionIncidenciasSeguridad" class="toggle-productos"><p  class="textOphone">Gestión de incidencias de seguridad </p> </a>
+        <div class="separadorProducts"></div>
+
+        </div>
+        <div >
+           <a  class="cursorPointer" href="../Casos_de_uso/Casos_de_uso.html#programasSeguridadInteligencia" class="toggle-productos"><p  class="textOphone">Programas de seguridad basada en inteligencia</p> </a>
+      <div class="separadorProducts"></div>
+
+      </div>
+      </div>
+      
+          <div class="buttonContact">
+            <a href="../Contacto/Contacto_Analytiko_web.html">
+              <button class="cta-contacto-modal">CONTÁCTANOS</button>
+            </a>
+          </div>
+      </div>
+  
+  </nav>
+      
+  </header>
+
+ <!--Hero, seccion 1--> 
+    
+    <section id="hero"> 
+        <h1>Casos de estudio</h1>
+    </section>
+
+    <!--Haz tu empresa mas segura--> 
+ 
+
+
+
+
+    <!--Section 3-->
+
+    <div class="contenedor-seccion3">
+      <div class="card-brochures">
+        <img src="./assets/miniatura-banca1.svg" alt="miniatura de banca y finanzas" class="imagen-brochure">
+        <div class="texto-brochure">
+          <h2>Banca y finanzas I</h2>
+          <div class="descargar-brochure">
+            <p class="texto-descarga">Descargar</p> 
+            <img src="./assets/icono-descargar.svg" alt="" class="icono-descarga">
+          </div>
+           <p class="texto-card"> texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto   texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto  texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto  texto texto texto </p>
+        </div>
+      </div>
+
+      <!-- CARD2 -->
+      <div class="card-brochures">
+        <img src="./assets/miniatura-banca1.svg" alt="miniatura de banca y finanzas" class="imagen-brochure">
+        <div class="texto-brochure">
+          <h2>Banca y finanzas I</h2>
+          <div class="descargar-brochure">
+            <p class="texto-descarga">Descargar</p> 
+            <img src="./assets/icono-descargar.svg" alt="" class="icono-descarga">
+          </div>
+           <p class="texto-card"> texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto   texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto  texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto  texto texto texto </p>
+        </div>
+      </div>
+
+
+      <!-- CARD3 -->
+      <div class="card-brochures">
+        <img src="./assets/miniatura-banca1.svg" alt="miniatura de banca y finanzas" class="imagen-brochure">
+        <div class="texto-brochure">
+          <h2>Banca y finanzas I</h2>
+          <div class="descargar-brochure">
+            <p class="texto-descarga">Descargar</p> 
+            <img src="./assets/icono-descargar.svg" alt="" class="icono-descarga">
+          </div>
+           <p class="texto-card"> texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto   texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto  texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto  texto texto texto </p>
+        </div>
+      </div>
+  </div>
+ 
+
+
+   <!--CTA final-->
+
+   <section id="cta-final">
+    <h1>Mejora la seguridad de tu empresa</h1>
+    
+    <a href="../Contacto/Contacto_Analytiko_web.html" class="toggle-productos">
+    <button class="cta-contacto">CONTÁCTANOS</button>
+  </a>
+        </section>
+
+
+<!--Separador hr-->
+
+<div class="separador-final">
+    <hr class="hr1">
+    </div>
+
+
+    <!--Footer-->
+
+ <div class="pie-de-pagina">
+  <footer>
+    <div class="footer1">
+      <div class="logo-redes">
+      <img
+        src="../Assets/Logo-Grupo-Analytiko-Diapo.png"
+        alt="logo-grupo-analytiko"
+        class="logo-footer"/>
+      
+        <div class="icono-redes">
+      <a
+        href="https://twitter.com/GrupoAnalytiko"
+        target="_blank"
+        class="linea"
+      >
+        <img
+          src="../Assets/twitter.svg"
+          alt="twitter"
+          class="iconos-footer twitter"
+        />
+      </a>
+
+      <a
+        href="https://www.linkedin.com/company/grupo-analytiko/"
+        target="_blank"
+        class="linea"
+      >
+        <img
+          src="../Assets/linkedin.svg"
+          alt="linkedin"
+          class="iconos-footer"
+        />
+      </a>
+
+      <a href="https://www.instagram.com/analytiko/" target="_blank">
+        <img
+          src="../Assets/Instagram.svg"
+          alt="instagram"
+          class="icono-instagram"
+        />
+      </a>
+    </div>
+    </div>
+
+      <p class="direccion">
+      Madrid, España.
+      </p>
+    </div>
+    
+
+    <div class="footer-2">
+      <h3 class="compañia">COMPAÑÍA</h3>
+      <a href="../Compania/compania.html">
+        <p class="link-productos">Sobre nosotros</p>
+      </a>
+
+
+      <h3>PRODUCTOS Y SERVICIOS</h3>
+      <a href="../Producto_Analytiko/Producto_Analytiko.html">
+        <p class="link-productos">Analytiko</p>
+      </a>
+
+      <a href="../Forsker/Producto_Forsker.html"
+        ><p class="link-productos">Försker</p>
+      </a>
+
+      <a href="../Producto_Immersion/Producto_Immersion.html">
+        <p class="link-productos">Immersion</p>
+      </a>
+    </div>
+
+    <div class="footer-3">
+      <h3 class="casos-de-uso">CASOS DE USO</h3>
+      <ul class="casos-li">
+        <a href="../Casos_de_uso/Casos_de_uso.html#investigacionFraudesFinancieros"  class="link-productos  ">
+        <li class="botones-desplegables" data-target="investigacionFraudesFinancieros">Investigación de fraudes financieros.</li>
+      </a>
+
+      <a href="../Casos_de_uso/Casos_de_uso.html#investigacionAsuntosInternos"   class="link-productos ">
+        <li class="botones-desplegables" data-target="investigacionAsuntosInternos">Investigaciones de asuntos internos.</li>
+      </a>
+
+       
+
+        <a href="../Casos_de_uso/Casos_de_uso.html#investigacionLavadoActivos"   class="link-productos ">
+        <li class="botones-desplegables" data-target="investigacionLavadoActivos">
+          Investigación de lavado de activos y <br />
+          debida diligencia.
+        </li>
+      </a>
+
+      <a href="../Casos_de_uso/Casos_de_uso.html#gestionIncidenciasSeguridad"  class="link-productos ">
+        <li class="botones-desplegables" data-target="gestionIncidenciasSeguridad" >
+          Gestión de incidencias de seguridad
+        </li>
+
+
+        <a href="../Casos_de_uso/Casos_de_uso.html#programasSeguridadInteligencia"   class="link-productos ">
+        <li class="botones-desplegables" data-target="programasSeguridadInteligencia">
+          Programas de seguridad basada en <br />
+          inteligencia.
+        </li>
+      </a>
+      </ul>
+    </div>
+  </footer>
+
+<!--Separador hr-->
+
+<div class="separador-final-2">
+<hr class="hr1">
+</div>
+
+<!--Seccion final del footer-->
+
+<div class="footer-final">
+
+
+<div class="footer-4">
+    <img src="../Assets/TM.svg" alt="tm" class="tm">
+    <p class="tm-analytiko">Analytiko 2023</p>
+    <p>Política de privacidad</p>
+</div>
+</div>
+
+</div>
+
+
+
+</body>
+</html>
+</html>

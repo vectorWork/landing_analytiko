@@ -134,7 +134,6 @@ document.addEventListener('DOMContentLoaded', function () {
             let recaptchaResponse =
               document.getElementById('recaptchaResponse');
             recaptchaResponse.value = token; // Set the recaptcha response
-            console.log('recaptchaResponse:', recaptchaResponse);
 
             fetch('capchav3.php', {
               method: 'POST',
@@ -146,7 +145,6 @@ document.addEventListener('DOMContentLoaded', function () {
               .then((response) => response.text())
               .then((response) => {
                 let responseJson = JSON.parse(response);
-                console.log('response Server', response);
                 if (responseJson.arrResponse['success']) {
                   const responseText = responseJson.res; // Get the response
                   // Crear un objeto para almacenar los datos del formulario
@@ -174,7 +172,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     .then((response) => {
                       document.querySelector('#alert').innerText =
                         '¡Información enviada con exito!';
-                      console.log(response);
                     })
 
                     .catch((error) => {
