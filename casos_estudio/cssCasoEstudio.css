@@ -37,6 +37,16 @@
   display: flex;
   cursor: pointer;
 }
+.flecha-brochure{
+  color: #146ca1;
+  margin-left: 10px;
+}
+.leer-mas-brochure{
+  margin-top: 10px;
+   display: flex;
+   cursor: pointer;
+   color: #146ca1;
+ }
 .texto-brochure{
   margin-left: 25px;
 }
@@ -1436,7 +1446,13 @@ a {
 
 @media (max-width: 1160px) {
     
+  .card-brochures{
+    height: 100%;
 
+  }
+  .imagen-brochure{
+    height: 190px;
+  }
 
   .card3 {
   margin-right: 50px;  
@@ -1480,8 +1496,6 @@ a {
     margin-top: 52px;
   }
   }
-
- 
 
 
   @media (max-width: 944px) {
@@ -1547,6 +1561,16 @@ a {
     }
 
     @media (max-width: 862px) {
+      .contenedor-seccion3 {
+        padding: 70px 20px 70px 20px;
+      }
+      .card-brochures{
+        height: 100%;
+
+      }
+.imagen-brochure{
+  height: 190px;
+}
       .container-cards {
         -webkit-box-display:flex; 
         -ms-flexbox-display: flex;
@@ -1589,7 +1613,13 @@ a {
 
 @media (max-width: 768px) {
   
-
+.descargar-brochure{
+  bottom: 15px;
+  right: 15px;
+  top: auto;
+}
+.imagen-brochure{
+}
   .nav {
     height: auto;
   }
@@ -2117,6 +2147,9 @@ a {
 /* Responsive modal */
 
 @media (max-width: 700px) {
+  .imagen-brochure{
+    height: 190px !important;
+  }
   .imagen {
 width: 90%;
 height: 90%;
@@ -2137,6 +2170,62 @@ height: 90%;
           width: 310px;
           
       }
+      .contenedor-seccion3 {
+        padding: 70px 20px 70px 20px;
+      }
+
+
+/* brochure */
+.card-brochures{
+  position: relative;
+  text-align: center;
+  display: inline-table;
+  width: 100%;
+  height: 150px ;
+  padding: 10px;
+  background: white;
+  margin: 0px 0px 40px 0px;
+}
+.imagen-brochure{
+  width: 100% !important;
+}
+.icono-descarga{
+  width: 22px;
+}
+.descargar-brochure{
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  bottom: 15px;
+  right: 15px;
+  top: auto;
+}
+.leer-mas-brochure{
+ margin-top: 10px;
+  display: flex;
+  cursor: pointer;
+  color: #146ca1;
+}
+.flecha-brochure{
+  color: #146ca1;
+  margin-left: 10px;
+}
+.texto-brochure{
+  margin-left: 0px;
+  text-align: justify;
+}
+.texto-card{
+  margin-top: 18px;
+}
+.texto-descarga{
+  margin-right: 10px;
+  color: #146ca1;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* fin brochure */
+
 
       .imagen {
           display: none;
@@ -2193,6 +2282,8 @@ slide-bottom {
 }
 
 @media (max-width: 350px) {
+
+
   .titulo-card {
     font-size: 16px;
   }
