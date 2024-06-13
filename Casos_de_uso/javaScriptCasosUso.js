@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function mostrarLista2() {
     options2list.style.display = 'block';
   }
+
   // Agrega el evento 'mouseenter' para mostrar la lista cuando el mouse entra en el li
   button.addEventListener('mouseenter', mostrarLista);
   button.addEventListener('mouseleave', ocultarLista);
@@ -26,14 +27,13 @@ document.addEventListener('DOMContentLoaded', function () {
   //Botones desplegables//
   ////////////////////////
   var botones = document.querySelectorAll('.botones-desplegables');
-
+  console.log(botones);
   function mostrarOcultarContenido(event) {
     var boton = event.target;
     var targetId = boton.getAttribute('data-target');
     var contenido = document.querySelector(`[data-toggle="${targetId}"]`);
     if (contenido) {
       // contenido.classList.toggle("visible");
-
       if (window.innerWidth >= 767) {
         if (
           contenido.style.display == 'flex' ||
@@ -81,7 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
   ////////////////////////
 
   var botonesModalOptionsCasoUso = document.querySelectorAll('.close');
-  console.log(botonesModalOptionsCasoUso);
   botonesModalOptionsCasoUso.forEach(function (boton) {
     boton.addEventListener('click', function () {
       var modal = document.getElementById('myModal');
