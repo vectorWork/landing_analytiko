@@ -1502,7 +1502,7 @@
     }
   }
   
-  @media (max-width: 420px) {
+  @media (max-width: 620px) {
     .texto-boton {
       display: block;
       text-align: center;
@@ -1515,6 +1515,11 @@
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+    }
+
+    .contenedor-titulo {
+      margin-right: 0;
+      padding-left: 0;
     }
   
     .contenedor-titulo2 {
@@ -1557,6 +1562,12 @@
     .contenedor-seccion3 {
       padding-left: 0;
       padding-right: 0;
+    }
+  }
+
+  @media (max-width: 370px) {
+    .titulo-banca2 {
+      font-size: 16px;
     }
   }
   
