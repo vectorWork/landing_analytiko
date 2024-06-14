@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
   //Botones desplegables//
   ////////////////////////
   var botones = document.querySelectorAll('.botones-desplegable');
-
   function mostrarOcultarContenido(event) {
     var boton = event.target;
     var targetId = boton.getAttribute('data-target');
