@@ -3,7 +3,8 @@
 *{
     margin:0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   
   * {
@@ -52,6 +53,8 @@
   bottom: 0;
   left: 0;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-display:flex; 
   -ms-flexbox-display: flex;
@@ -75,13 +78,19 @@
   
     margin-left: auto;
     margin-right: auto;
-    transform: scale(0.6); -webkit-transform scale(0.6);
+    -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+            transform: scale(0.6); -webkit-transform scale(0.6);
     opacity: 0;
+    -webkit-transition: .3s ease all;
+    -o-transition: .3s ease all;
     transition: .3s ease all; -webkit-transition .3s ease all;
   }
   
   .pop-up-wrap.show{
-    transform: scale(1); -webkit-transform scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1); -webkit-transform scale(1);
     opacity: 1;
   }
   
@@ -195,6 +204,8 @@
     height: 80px;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -227,6 +238,8 @@
     transition: left 0.4s;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -246,6 +259,8 @@
     font-weight: 400;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -310,6 +325,8 @@
     width: 150px;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-family: "Montserrat";
     font-size: 14px;
@@ -377,6 +394,8 @@
   #hero {
     -webkit-box-display:flex; 
     -ms-flexbox-display:flex; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
     text-align: center;
     -webkit-box-align: center;
@@ -459,8 +478,12 @@
   /*  Videos  */
 
   .contenedor-principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .cards {
@@ -527,6 +550,8 @@
     height: auto;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -569,6 +594,8 @@
   .cta-contacto {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 400px;
     height: 50px;
@@ -592,6 +619,8 @@
   .cta-contacto-modal {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 90%;  height: 50px;
     padding: 10px;
@@ -651,6 +680,8 @@
     margin-left: 50px;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -663,6 +694,8 @@
     color: #fff;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -776,6 +809,8 @@
   .footer-4 {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -880,6 +915,8 @@
           line-height: 60px;
           -webkit-box-display:flex; 
           -ms-flexbox-display: flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
           -webkit-box-align: center;
               -ms-flex-align: center;
@@ -1140,6 +1177,8 @@
       #cta-final {
         -webkit-box-display:flex; 
         -ms-flexbox-display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
             -ms-flex-align: center;
@@ -1274,6 +1313,8 @@
       .footer-4 {
         -webkit-box-display:flex; 
         -ms-flexbox-display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
