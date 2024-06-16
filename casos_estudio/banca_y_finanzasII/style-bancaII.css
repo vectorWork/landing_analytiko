@@ -449,10 +449,10 @@ body {
 
 .contenedor-titulo {
   background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#009bd8),
+     linear, 
+     left top, 
+     right top, 
+     from(#009bd8),
     color-stop(#005581),
     to(#1e4470)
   );
