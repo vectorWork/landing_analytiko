@@ -939,8 +939,14 @@
   }
   
   .boton-leer-immersion {
-    margin-top: 52px;
+    margin-top: 75px;
   }
+
+  .boton-1 {
+    margin-top: 74px !important;
+  }
+
+ 
   }
   
 
@@ -997,6 +1003,14 @@
 
 
     @media (max-width: 862px) {
+
+      .boton-1 {
+        margin-top: 30px !important;
+      }
+
+      .boton-leer-immersion {
+        margin-top: 30px !important;
+      }
         .container-cards {
           -webkit-box-display: flex;
           -ms-flexbox-display: flex;

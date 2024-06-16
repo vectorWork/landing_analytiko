@@ -1004,7 +1004,11 @@
     }
 
     .boton-leer-immersion {
-      margin-top: 52px;
+      margin-top: 75px;
+    }
+
+    .boton-1 {
+      margin-top: 74px !important;
     }
 }
 
@@ -1109,6 +1113,14 @@
 
       .logo-immersion{
         margin-top: 40px;
+      }
+
+      .boton-1 {
+        margin-top: 30px !important;
+      }
+
+      .boton-leer-immersion {
+        margin-top: 30px !important;
       }
   }
 

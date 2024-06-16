@@ -168,6 +168,10 @@ letter-spacing: 1.04px;
   color: white;
 }
 
+.boton-1 {
+  margin-top: 36px !important;
+}
+
 .boton-contacto {
   border-radius: 4px;
   background: var(--acento, #2a91d0);
@@ -936,7 +940,7 @@ letter-spacing: 1.04px;
 #nuestras-marcas {
   background-image: url(../Assets/background_nuestras_marcas.jpg);
   margin-top: auto;
-  height: 500px;
+  height: 540px;
   background-size: cover;
 }
 
@@ -1076,6 +1080,7 @@ ul.caracteristicas-immersion li {
   background-size: cover;
   padding-top: 50px;
   padding-bottom: 50px;
+  
 }
 
 #cta-final h1 {
@@ -1456,6 +1461,10 @@ a{
 
 
 @media (max-width: 768px) {
+
+  .boton-1 {
+    margin-top: 20px !important;
+  }
 
   .r {
     font-size: 20px;
