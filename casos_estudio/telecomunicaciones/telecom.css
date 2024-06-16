@@ -433,6 +433,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
+  border: 0;
 }
 
 .titulo-banca2 {
