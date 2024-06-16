@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <title>Brochure Analytiko</title>
     <link rel="stylesheet" href="style-analytikoweb.css">
-    <script src="">"javaScriptAnalytikoBro.js"</script>
+    <script src="javaScriptAnalytikoBro.js"></script>
     <link rel="icon" href="../../Assets/icon_paginaweb.png">
 </head>
 
@@ -20,182 +20,208 @@
  <!--Header-->
 
  <header class="header">
-    <nav class="nav">
-        <div class="logotipo">
-            <a href="../../Home/index.html">
-            <img src="../../Assets/Logo-Grupo-Analytiko-Diapo.png" alt="logo">
-        </a>
-        </div>
-            
-            
-            <ul class="nav-menu">
-            <li class="nav-menu-item"> 
-                <a href="../../Home/index.html" class="nav-menu-link nav-link">INICIO</a>
-            </li>
-            
-            <div id="buttonProducts">
-                <li class="nav-menu-item"> 
-                    <a href="../../Productos_y_servicios/Productos_y_servicios.html" class="nav-menu-link nav-link">PRODUCTOS Y SERVICIOS <img src="../../Assets/mostrar-productos.svg" alt="mostrar-productos" class="mostrar-productos"></a>
-                    <div id="optionProducts" class="optionCard hideOptions">
-                       
-                        <div>
-                            <a href="../../Producto_Analytiko/Producto_Analytiko.html" class="enlace-contacto">
-                                <p class="cursorPointer">Analytiko</p>
-                            </a>
-                        </div>
-                    
-                        <div>
-                                <a href="../../Producto_Skuld/Producto_Skuld.html" class="enlace-contacto">
-                                    <p class="cursorPointer">Skuld</p>
-                                </a>
-                        </div>
-                        <div>
-                                <a href="../../Producto_Immersion/Producto_Immersion.html" class="enlace-contacto">
-                                    <p class="cursorPointer-immersion">Immersion</p>
-                                </a>
-                        </div>
-                    </div>
-                </li>
-            </div>
-            
-            
-            <div id="buttonProducts2">
-                <li class="nav-menu-item">
-                  <a href="../../Casos_de_uso/Casos_de_uso.html" class="nav-menu-link nav-link"
-                    >CASOS DE USO
-                    <img
-                      src="../../Assets/mostrar-productos.svg"
-                      alt="mostrar-productos"
-                      class="mostrar-productos"
-                  /></a>
-                  <div id="optionCases" class="optionCard hideOptions">
-                    <div>
-                      <a
-                        href="../../Casos_de_uso/Casos_de_uso.html#investigacionFraudesFinancieros"
-                        class="enlace-contacto"
-                      >
-                        <p class="cursorPointer">Investigación de fraudes financieros</p>
-                      </a>
-                    </div>
+  <nav class="nav">
+    <div class="logotipo">
+      <a href="../../Home/index.html">
+      <img src="../../Assets/Logo-Grupo-Analytiko-Diapo.png"
+        alt="logo"/>
+    </a>
+    </div>
+
+
+    <!-- ventana modal -->
     
-                    <div>
-                      <a href="../../Casos_de_uso/Casos_de_uso.html#investigacionAsuntosInternos" class="enlace-contacto">
-                        <p class="cursorPointer">Investigaciones de asuntos internos</p>
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        href="../../Casos_de_uso/Casos_de_uso.html#investigacionLavadoActivos"
-                        class="enlace-contacto"
-                      >
-                        <p class="cursorPointer-immersion">Investigación de lavado de activos y debida inteligencia</p>
-                      </a>
-                    </div>
-  
-                  <div>
-                    <a
-                      href="../../Casos_de_uso/Casos_de_uso.html#gestionIncidenciasSeguridad"
-                      class="enlace-contacto"
-                    >
-                      <p class="cursorPointer">Gestión de incidencias de seguridad</p>
-                    </a>
-                  </div>
-  
-                  <div>
-                    <a
-                      href="../../Casos_de_uso/Casos_de_uso.html#programasSeguridadInteligencia"
-                      class="enlace-contacto"
-                    >
-                      <p class="cursorPointer">Programas de seguridad basada en inteligencia</p>
-                    </a>
-                  </div>
-                </div>
-                </li>
-              </div>
-           
-            <li > 
-                <a href="../../Contacto/Contacto_Analytiko_web.html" class="boton-contacto">CONTÁCTANOS</a>
-            </li>
-            
-        </ul>
-        <button class="nav-toggle"  id="toggleModalButton">
-            <img src="../../Assets/menu-hamburguesa.svg" alt="">
-        </button>
+    <ul class="nav-menu">
+      <li class="nav-menu-item">
+        <a href="../../Home/index.html" class="nav-menu-link nav-link">INICIO</a>
+      </li>
+      <div  id="buttonProducts">
+        <li class="nav-menu-item">
+          <a href="../../Productos_y_servicios/Productos_y_servicios.html" class=" nav-menu-link nav-link"
+            >PRODUCTOS Y SERVICIOS
+            <img
+              src="../../Assets/mostrar-productos.svg"
+              alt="mostrar-productos"
+              class="mostrar-productos"
+          /></a>
+          <div class="divOptionHeader"> 
+          <div id="optionProducts" class="optionCard hideOptions">
+            <div>
+              <a
+                href="../../Producto_Analytiko/Producto_Analytiko.html"
+                class="enlace-contacto"
+              >
+                <p class="cursorPointer">Analytiko</p>
+              </a>
+            </div>
 
-
-        <!--Menu mobile-->
-
-         <div class="modal" id="myModal">
-        <div class="sectionOptionMenu">
-            <a href="../../Home/index.html" class="toggle-productos">
-            <p class="pOptionPhone"> INICIO</p>
-        </a>
-            <div class="separator"></div>
+            <div>
+              <a href="../../Producto_Skuld/Producto_Skuld.html" class="enlace-contacto">
+                <p class="cursorPointer">Skuld</p>
+              </a>
+            </div>
+            <div>
+              <a
+                href="../../Producto_Immersion/Producto_Immersion.html"
+                class="enlace-contacto"
+              >
+                <p class="cursorPointer-immersion">Immersion</p>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="sectionOptionMenu botones-desplegables" data-target="productService">
-            <p class="pOptionPhone">PRODUCTOS Y SERVICIOS</p>
-            <div class="separator"></div>
-           
-        </div>
-        <div class="displayNone productsClass" data-toggle="productService">
+        </li>
+      </div>
+      <!--Casos de uso menu-->
+
+      <div id="buttonProducts2">
+        <li class="nav-menu-item">
+          <a href="../../Casos_de_uso/Casos_de_uso.html" class="nav-menu-link nav-link"
+            >CASOS DE USO
+            <img
+              src="../../Assets/mostrar-productos.svg"
+              alt="mostrar-productos"
+              class="mostrar-productos"
+          /></a>
+          <div class="divOptionHeader"> 
+          <div id="optionCases" class="optionCard hideOptions">
+            <div>
+              <a
+                href="../../Casos_de_uso/Casos_de_uso.html#investigacionFraudesFinancieros"
+                class="enlace-contacto"
+              >
+                <p class="cursorPointer">Investigación de fraudes financieros</p>
+              </a>
+            </div>
+
+            <div>
+              <a href="../../Casos_de_uso/Casos_de_uso.html#investigacionAsuntosInternos" class="enlace-contacto">
+                <p class="cursorPointer">Investigaciones de asuntos internos</p>
+              </a>
+            </div>
+            <div>
+              <a
+                href="../../Casos_de_uso/Casos_de_uso.html#investigacionLavadoActivos"
+                class="enlace-contacto"
+              >
+                <p class="cursorPointer-immersion">Investigación de lavado de activos y debida inteligencia</p>
+              </a>
+            </div>
+
           <div>
-              <a class="cursorPointer " href="../../Producto_Analytiko/Producto_Analytiko.html"><p class="textOphone">Analytiko</p></a> 
-
+            <a
+              href="../../Casos_de_uso/Casos_de_uso.html#gestionIncidenciasSeguridad"
+              class="enlace-contacto"
+            >
+              <p class="cursorPointer">Gestión de incidencias de seguridad</p>
+            </a>
           </div>
-          <div class="separadorProducts"></div>
 
-          <div >
-              <a class="cursorPointer " href="../../Producto_Skuld/Producto_Skuld.html" class="toggle-productos"> <p class="textOphone">Skuld</p></a>
+          <div>
+            <a
+              href="../../Casos_de_uso/Casos_de_uso.html#programasSeguridadInteligencia"
+              class="enlace-contacto"
+            >
+              <p class="cursorPointer">Programas de seguridad basada en inteligencia</p>
+            </a>
           </div>
-          <div class="separadorProducts"></div>
+        </div>
+      </div>
+        </li>
+      </div>
+<!-- final casos de iuso menu -->
 
-          <div >
-              <a class="cursorPointer " href="../../Producto_Immersion/Producto_Immersion.html" class="toggle-productos"> <p class="textOphone">Immersion</p>  </a>
 
-          </div>
-          <div class="separadorProducts"></div>
+      <li>
+        <a
+          href="../../Contacto/Contacto_Analytiko_web.html"
+          class="boton-contacto"
+          >CONTÁCTANOS</a
+        >
+      </li>
+    </ul>
+    <button class="nav-toggle" id="toggleModalButton">
+      <img
+        src="../../Assets/menu-hamburguesa.svg"
+        alt=""
+      />
+    </button>
+
+   <!--Menu mobile-->
+
+   <div class="modal" id="myModal">
+    <div class="sectionOptionMenu">
+      <a href="../../Home/index.html" class="toggle-productos">
+        <p class="pOptionPhone">INICIO</p>
+      </a>
+        <div class="separator"></div>
+    </div>
+    <div class="sectionOptionMenu botones-desplegables" data-target="productService">
+        <p class="pOptionPhone">PRODUCTOS Y SERVICIOS</p>
+        <div class="separator"></div>
+       
+    </div>
+    <div class="displayNone productsClass" data-toggle="productService">
+      <div>
+          <a class="cursorPointer " href="../../Producto_Analytiko/Producto_Analytiko.html"><p class="textOphone">Analytiko</p></a> 
 
       </div>
-        <div class="sectionOptionMenu botones-desplegables" data-target="caseUse">
-          <p class="pOptionPhone">CASOS DE USO</p>
-          <div class="separator"></div>
-         
-      </div>
-      <div class="displayNone productsClass" data-toggle="caseUse">
-        <div>
-           <a class="cursorPointer"  href="../../Casos_de_uso/Casos_de_uso.html#investigacionFraudesFinancieros"> <p class="textOphone">Investigación de fraudes financieros</p></a> 
-        </div>
-        <div class="separadorProducts"></div>
-
-        <div >
-            <a class="cursorPointer"  href="../../Casos_de_uso/Casos_de_uso.html#investigacionAsuntosInternos" class="toggle-productos"> <p  class="textOphone">Investigaciones de asuntos internos</p></a>
-        </div>
-        <div class="separadorProducts"></div>
-
-        <div >
-             <a  class="cursorPointer" href="../../Casos_de_uso/Casos_de_uso.html#investigacionLavadoActivos" class="toggle-productos"><p  class="textOphone">Investigación de lavado de activos y debida inteligencia </p> </a>
-        </div>
-        <div class="separadorProducts"></div>
-
-        <div >
-           <a  class="cursorPointer" href="../../Casos_de_uso/Casos_de_uso.html#gestionIncidenciasSeguridad" class="toggle-productos"><p  class="textOphone">Gestión de incidencias de seguridad </p> </a>
       <div class="separadorProducts"></div>
 
-      </div>
       <div >
-         <a  class="cursorPointer" href="../../Casos_de_uso/Casos_de_uso.html#programasSeguridadInteligencia" class="toggle-productos"><p  class="textOphone">Programas de seguridad basada en inteligencia</p> </a>
+          <a class="cursorPointer " href="../../Producto_Skuld/Producto_Skuld.html" class="toggle-productos"> <p class="textOphone">Skuld</p></a>
+      </div>
+      <div class="separadorProducts"></div>
+
+      <div >
+          <a class="cursorPointer " href="../../Producto_Immersion/Producto_Immersion.html" class="toggle-productos"> <p class="textOphone">Immersion</p>  </a>
+
+      </div>
+      <div class="separadorProducts"></div>
+
+  </div>
+    <div class="sectionOptionMenu botones-desplegables" data-target="caseUse">
+      <p class="pOptionPhone">CASOS DE USO</p>
+      <div class="separator"></div>
+     
+  </div>
+  <div class="displayNone productsClass" data-toggle="caseUse">
+    <div>
+       <a class="cursorPointer"  href="../../Casos_de_uso/Casos_de_uso.html#investigacionFraudesFinancieros"> <p class="textOphone">Investigación de fraudes financieros</p></a> 
+    </div>
     <div class="separadorProducts"></div>
 
+    <div >
+        <a class="cursorPointer"  href="../../Casos_de_uso/Casos_de_uso.html#investigacionAsuntosInternos" class="toggle-productos"> <p  class="textOphone">Investigaciones de asuntos internos</p></a>
     </div>
+    <div class="separadorProducts"></div>
+
+    <div >
+         <a  class="cursorPointer" href="../../Casos_de_uso/Casos_de_uso.html#investigacionLavadoActivos" class="toggle-productos"><p  class="textOphone">Investigación de lavado de activos y debida inteligencia </p> </a>
     </div>
-        <div class="buttonContact">
-        
-            <button class="cta-contacto-modal"> <a href="../../Contacto/Contacto_Analytiko_web.html" class="toggle-productos">CONTÁCTANOS </a></button>
-        </div>
+    <div class="separadorProducts"></div>
+
+    <div >
+       <a  class="cursorPointer" href="../../Casos_de_uso/Casos_de_uso.html#gestionIncidenciasSeguridad" class="toggle-productos"><p  class="textOphone">Gestión de incidencias de seguridad </p> </a>
+  <div class="separadorProducts"></div>
+
+  </div>
+  <div >
+     <a  class="cursorPointer" href="../../Casos_de_uso/Casos_de_uso.html#programasSeguridadInteligencia" class="toggle-productos"><p  class="textOphone">Programas de seguridad basada en inteligencia</p> </a>
+<div class="separadorProducts"></div>
+
+</div>
+</div>
+
+    <div class="buttonContact">
+      <a href="../../Contacto/Contacto_Analytiko_web.html">
+        <button class="cta-contacto-modal">CONTÁCTANOS</button>
+      </a>
     </div>
+</div>
 
 </nav>
-    
+
 </header>
 
 
@@ -235,8 +261,15 @@
 
    
 
-
-    
+  <div class="texto-boton">
+    <div class="contenedor-titulo">
+<h1 class="titulo-banca2">Analytiko</h1>
+    </div>
+    <button onclick="descargarPDF()" class="descargar-brochure">
+        <p class="texto-descarga">Descargar</p> 
+        <img src="../assets/icono-descargar.svg" alt="" class="icono-descarga">
+    </button>
+</div>
     
     
 

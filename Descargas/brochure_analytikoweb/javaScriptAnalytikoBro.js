@@ -86,3 +86,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+function descargarPDF() {
+  // Ruta del archivo PDF que quieres descargar
+  var rutaDelArchivo = '../../Assets/Descargables/BrochureAnalytiko_web.pdf';
+
+  // Crear un enlace temporal a la URL
+  var tempLink = document.createElement('a');
+  tempLink.href = rutaDelArchivo;
+  tempLink.setAttribute('target', '_blank');
+
+  // Agregar el enlace temporal al DOM
+  document.body.appendChild(tempLink);
+
+  // Hacer clic en el enlace
+  tempLink.click();
+
+  // Eliminar el enlace temporal
+  document.body.removeChild(tempLink);
+}
