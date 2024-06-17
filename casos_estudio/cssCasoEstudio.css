@@ -672,6 +672,7 @@ body {
   right: 25px;
   display: flex;
   cursor: pointer;
+  
 }
 .flecha-brochure{
   color: #146ca1;
@@ -694,6 +695,16 @@ line-height: 180%; /* 36px */
 position: absolute;
 bottom: 20px;
 
+ }
+
+ .leer-clase {
+  color: #2A91D0;
+  
+ }
+
+ .leer-clase:hover {
+  color: #14699f;
+  
  }
 .texto-brochure{
   margin-left: 20px;

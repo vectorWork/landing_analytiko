@@ -493,6 +493,15 @@
     cursor: pointer;
   }
   
+  .leer-clase {
+    color: #2A91D0;
+    
+   }
+  
+   .leer-clase:hover {
+    color: #14699f;
+    
+   }
   
   
   .titulo-2 {

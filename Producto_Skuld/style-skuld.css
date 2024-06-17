@@ -227,7 +227,7 @@ a {
 }
 
 .breadcrumbs {
-  margin-top: 70px;
+  margin-top: 90px;
   margin-bottom: 10px;
   font-family: 'Montserrat';
   font-size: 14px;
@@ -1310,10 +1310,6 @@ footer h3 {
     margin-top: 60px !important;
   }
 
-  .breadcrumbs {
-    margin-top: 50px;
-  }
-
   .header {
     height: 60px;
   }
@@ -1329,10 +1325,6 @@ footer h3 {
 
   .boton-contacto {
     display: none;
-  }
-
-  .breadcrumbs {
-    margin-top: 50px;
   }
 
   .nav-toggle {
