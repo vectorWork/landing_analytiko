@@ -555,7 +555,7 @@
   
   
   .contenedor-seccion3 {
-    padding: 70px 80px 70px 80px;
+    padding: 70px 80px 40px 80px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -688,6 +688,14 @@
    
   }
   
+  .leer-clase {
+    color: #2A91D0;
+    
+   }
+  
+   .leer-clase:hover {
+    color: #14699f;
+   }  
   
   .leer-mas-brochure{
     margin-top: 10px;
@@ -2317,6 +2325,7 @@ padding-left: 0;
   
   .banca2-mobile {
     display: block;
+    width: 100%;
   }
   
   .telecom-mobile {

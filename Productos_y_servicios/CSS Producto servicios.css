@@ -317,7 +317,7 @@ body {
   flex-direction: column;
   height: 80vh;
   color: #d7d7d7;
-  background-image: url(./Assets/productos_y_servicios.jpg);
+  background-image: url(./Assets/productos_y_servicios.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -339,7 +339,7 @@ body {
 /* Nuestras marcas */
 
 .nuestras-marcas {
-  background-image: url(./Assets/background_nuestras_marcas.jpg);
+  background-image: url(../Assets/background_nuestras_marcas.jpg);
   background-size: cover;
 }
 
