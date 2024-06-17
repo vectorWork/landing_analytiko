@@ -84,6 +84,7 @@ body {
   color: white;
   text-decoration: none;
   z-index: 99999999;
+  cursor: pointer;
 }
 
 .nav-menu {
