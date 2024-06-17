@@ -1,5 +1,4 @@
-﻿
-:root {
+﻿:root {
   --call-to-action: #2a91d0;
   --card: #000c1d;
   --background-footer: #020000;
@@ -10,7 +9,7 @@
 * {
   box-sizing: border-box;
 }
-.alertText{
+.alertText {
   font-size: 30px;
   margin: 0px 15px 0px 148px;
   width: 303px;
@@ -21,43 +20,73 @@
   color: #65afdd;
 }
 
-.pOptionPhone{pointer-events: none;
+.pOptionPhone {
+  pointer-events: none;
   height: 38px;
   padding-top: 20px;
   margin: 0px 0px 3px 0px;
 }
-.textOphone{pointer-events: none;
+.enlace-contacto {
+  text-decoration: none;
+}
+.optionCardResources {
+  position: absolute;
+  top: 58px;
+  background: #01030d;
+  width: 219px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  color: white;
+  right: 90px;
+  .cursorPointer {
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-top: 0;
+    color: #afafaf;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.688%; /* 22.51px */
+    letter-spacing: 1.04px;
+  }
+}
+
+.textOphone {
+  pointer-events: none;
   margin: 0px 0px 16px 40px;
-      height: 23px;
-      margin-top: -13px;
-  }
-  .cta-contacto-modal {
-    -webkit-box-display:flex; 
-    -ms-flexbox-display: flex;
-    display: flex;
-    width: 90%;  height: 50px;
-    padding: 10px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 10px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    color: white;
-    background-color: #2a91d0;
-    border-radius: 4px;
-    border: 0;
-    font-size: 16px;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  height: 23px;
+  margin-top: -13px;
+}
+.cta-contacto-modal {
+  -webkit-box-display: flex;
+  -ms-flexbox-display: flex;
+  display: flex;
+  width: 90%;
+  height: 50px;
+  padding: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: white;
+  background-color: #2a91d0;
+  border-radius: 4px;
+  border: 0;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
 body {
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #ececec;
   margin: 0;
   max-width: 100%;
@@ -87,7 +116,7 @@ input {
   padding: 7px;
 
   color: #fff;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   background-color: transparent;
   border: 0px solid #414141;
 }
@@ -98,14 +127,13 @@ textarea {
   background: #3e4759;
   border: none;
   color: #fff;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 16px;
   resize: none;
 }
 .form-group {
   position: relative;
 }
-
 
 .modal {
   display: none;
@@ -227,7 +255,7 @@ textarea {
 }
 .nav-menu-item {
   margin: 20px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -253,7 +281,7 @@ textarea {
       margin-left: 15px;
       margin-top: 0;
       color: #afafaf;
-      font-family: "Montserrat";
+      font-family: 'Montserrat';
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
@@ -273,7 +301,7 @@ textarea {
   margin-top: 0;
   color: #afafaf;
 
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -291,7 +319,7 @@ textarea {
   height: 40px;
   width: 150px;
   display: flex;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 14px;
   padding: 10px 20px;
   justify-content: center;
@@ -366,7 +394,7 @@ textarea {
 .breadcrumbs {
   margin-top: 90px;
   margin-bottom: 10px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 14px;
   padding: 0;
   margin-left: 30px;
@@ -392,7 +420,7 @@ textarea {
 }
 
 .breadcrumbs-item:not(:last-of-type)::after {
-  content: "\203a";
+  content: '\203a';
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -404,7 +432,6 @@ textarea {
   padding-bottom: 70px;
 }
 
-
 .contacto-container .contenedor-1 {
   width: 100%;
   align-items: center;
@@ -414,7 +441,7 @@ textarea {
 
 .section__header {
   color: #fff;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -467,7 +494,7 @@ textarea {
   text-decoration: none;
   color: #dfdfdf;
   text-align: justify;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -499,7 +526,7 @@ textarea {
 }
 .contacto-container .contenedor-1 .contacto-info .box .text h4 {
   color: #fff;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -511,7 +538,6 @@ textarea {
 }
 
 .text-info1 {
- 
   margin-top: 20px;
 }
 
@@ -519,7 +545,7 @@ textarea {
   margin-top: 0;
   margin-bottom: 10px;
   color: #fff;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -529,13 +555,12 @@ textarea {
 .parrafo-direccion {
   color: #dfdfdf;
   text-align: justify;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 19.2px */
   margin-top: 10px;
-
 }
 
 .contacto-container .contenedor-1 .contacto-info .box .text p {
@@ -545,7 +570,7 @@ textarea {
   margin-left: 150px;
   color: #66c5ff;
   text-align: justify;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -602,7 +627,7 @@ textarea {
   border: 0;
 
   color: #fff;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -621,7 +646,7 @@ textarea {
 .text-titulo {
   color: #66c5ff;
   text-align: justify;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -630,7 +655,7 @@ textarea {
 
 .contacto-container .form-container .form .form-group {
   color: #fff;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -641,13 +666,13 @@ textarea {
   width: 100%;
 
   color: #fff;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   background-color: transparent;
   /* border: 1px solid #414141; */
 }
 
 ::placeholder {
-  color: #686c73
+  color: #686c73;
 }
 
 .contacto-container .form-container .form .form-group input:focus {
@@ -749,7 +774,6 @@ footer h3 {
   margin-left: 30px;
   margin-top: 30px;
 }
-
 
 .twitter {
   margin-left: 0;
@@ -853,7 +877,6 @@ a {
     text-decoration: none;
     color: white;
   }
-  
 
   .toggle-productos {
     text-decoration: none;
@@ -863,9 +886,6 @@ a {
   .cta-contacto {
     width: 90%;
   }
-
-
-
 
   .pOptionPhone {
     margin: 0px 0px 3px 0px;
@@ -888,20 +908,18 @@ a {
     margin-left: 40px;
     margin-top: 25px;
   }
-  .alertText{
+  .alertText {
     font-size: 30px;
     margin: 0px 15px 0px 27px;
     width: 303px;
   }
 }
 
-
 @media (max-width: 768px) {
-
   .nav {
     height: auto;
   }
-  
+
   .modal {
     margin-top: 60px !important;
   }
@@ -963,7 +981,6 @@ a {
   .text-info {
     margin-left: 25px;
   }
- 
 
   .contacto-container .contenedor-2 .subtitulo-contacto h4 {
     display: flex;

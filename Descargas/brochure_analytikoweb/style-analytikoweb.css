@@ -504,7 +504,15 @@
     margin-right: 30px;
   }
 
- 
+  .optionCardResources {
+    position: absolute;
+    top: 43px;
+    background: #01030d;
+    width: 219px;
+    padding-top: 15px;
+    padding-bottom: 0;
+    color: white;
+  }
 .descargar {
     display: -webkit-box;
     display: -ms-flexbox;

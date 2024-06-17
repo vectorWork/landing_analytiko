@@ -300,6 +300,15 @@
     color: white;
     
   }
+  .optionCardResources {
+    position: absolute;
+    top: 32px;
+    background: #01030d;
+    width: 219px;
+    padding-top: 15px;
+    padding-bottom: 0;
+    color: white;
+  }
   .cursorPointer {
     cursor: pointer;
     margin-bottom: 30px;

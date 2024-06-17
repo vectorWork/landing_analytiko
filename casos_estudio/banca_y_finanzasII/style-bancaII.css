@@ -509,7 +509,26 @@ body {
   line-height: 180%; /* 36px */
   margin-right: 10px;
 }
-
+.sectionOptionMenu {
+  /* border-bottom: 1px solid #dfdfdf; */
+  font-family: Montserrat;
+  color: white;
+  cursor: pointer;
+  padding: 0px 15px 0px 15px;
+}
+.separator {
+  border-top: 1px solid #2f3349;
+  margin: 8px 0;
+}
+.optionCardResources {
+  position: absolute;
+  top: 43px;
+  background: #01030d;
+  width: 219px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  color: white;
+}
 .icono-descarga {
   width: 22px;
   padding-top: 18px;

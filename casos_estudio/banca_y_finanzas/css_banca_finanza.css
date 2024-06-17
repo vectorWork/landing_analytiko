@@ -10,6 +10,17 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.sectionOptionMenu {
+  /* border-bottom: 1px solid #dfdfdf; */
+  font-family: Montserrat;
+  color: white;
+  cursor: pointer;
+  padding: 0px 15px 0px 15px;
+}
+.separator {
+  border-top: 1px solid #2f3349;
+  margin: 8px 0;
+}
 .divOptionHeader {
   position: absolute;
   height: 49px;
@@ -121,6 +132,16 @@ body {
 .optionCard {
   position: absolute;
   top: 32px;
+  background: #01030d;
+  width: 219px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  color: white;
+}
+
+.optionCardResources {
+  position: absolute;
+  top: 43px;
   background: #01030d;
   width: 219px;
   padding-top: 15px;

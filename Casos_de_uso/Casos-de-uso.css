@@ -178,6 +178,19 @@ body {
   padding-bottom: 0;
   color: white;
 }
+.divOptionHeaderResources {
+  position: relative;
+}
+.optionCardResources {
+  position: absolute;
+  top: 58px;
+  background: #01030d;
+  width: 219px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  color: white;
+  right: -89px;
+}
 .cursorPointer {
   cursor: pointer;
   margin-bottom: 30px;
