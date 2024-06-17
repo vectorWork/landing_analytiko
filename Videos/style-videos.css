@@ -901,6 +901,26 @@
     font-weight: bold;
   }
 
+  @media (max-width: 1040px) {
+    .nav-toggle {
+      background: none;
+      border: none;
+      padding-right: 0;
+      line-height: 60px;
+      -webkit-box-display: flex;
+      -ms-flexbox-display: flex;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    .nav-menu-item {
+      display: none;
+    }
+    .boton-contacto {
+      display: none;
+    }
+  }
   @media (max-width: 944px) {
 
     #hero h1 {
