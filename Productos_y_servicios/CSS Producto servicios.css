@@ -31,6 +31,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 .header {
   background-image: url(../Assets/back_header.png);
   width: 100%;
@@ -817,21 +819,14 @@ a {
     margin-left: 50px;
   }
 
-  .nav {
-    height: auto;
-  }
+  
 
   .modal {
     margin-top: 60px !important;
   }
 
-  .breadcrumbs {
-    margin-top: 70px;
-  }
-
-  .header {
-    height: 60px;
-  }
+  
+ 
 
   .visible {
     display: block !important;
@@ -937,6 +932,7 @@ a {
     display: none;
   }
 
+ 
   .boton-contacto {
     display: none;
   }
