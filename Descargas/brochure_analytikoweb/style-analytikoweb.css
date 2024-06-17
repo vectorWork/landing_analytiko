@@ -501,6 +501,7 @@
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 30px;
+    padding-right: 30px;
     margin-right: 30px;
   }
 
@@ -1694,6 +1695,11 @@ padding-right: 20px;
 
 
         @media (max-width: 510px) {
+
+          .contenedor-titulo {
+            padding-left: 0;
+            padding-right: 0;
+          }
           
 .imagen-final1 {
    width: 90%;

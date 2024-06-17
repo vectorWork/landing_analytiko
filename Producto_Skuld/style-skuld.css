@@ -1238,6 +1238,11 @@ footer h3 {
 }
 
 @media (max-width: 944px) {
+
+  .breadcrumbs {
+    margin-top: 90px;
+  }
+
   .modal {
     margin-top: 80px;
   }
@@ -1245,6 +1250,7 @@ footer h3 {
     display: none;
   }
 
+  
   .boton-contacto {
     display: none;
   }
@@ -1298,6 +1304,11 @@ footer h3 {
 }
 
 @media (max-width: 768px) {
+
+  .breadcrumbs {
+    margin-top: 70px;
+  }
+
   .r {
     font-size: 20px;
   }
