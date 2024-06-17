@@ -8,27 +8,29 @@
 }
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-.divOptionHeader{
+.divOptionHeader {
   position: absolute;
   height: 49px;
   z-index: 999999;
   width: 218px;
 }
-.pOptionPhone{pointer-events: none;
+.pOptionPhone {
+  pointer-events: none;
   height: 38px;
   padding-top: 20px;
   margin: 0px 0px 3px 0px;
 }
-.textOphone{pointer-events: none;
+.textOphone {
+  pointer-events: none;
   margin: 0px 0px 16px 40px;
-      height: 23px;
-      margin-top: -13px;
-  }
+  height: 23px;
+  margin-top: -13px;
+}
 body {
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #ececec;
   margin: 0;
   max-width: 100%;
@@ -48,7 +50,6 @@ body {
 .logotipo img {
   height: 46px;
   margin-left: 30px;
-  
 }
 
 .nav {
@@ -56,11 +57,11 @@ body {
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 30px;
   max-width: 100%;
   height: 80px;
@@ -86,11 +87,11 @@ body {
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .toggle-productos {
@@ -99,8 +100,8 @@ body {
 }
 
 .nav-menu-item {
-  margin: 0 20px ;
-  font-family: "Montserrat";
+  margin: 0 20px;
+  font-family: 'Montserrat';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -110,9 +111,6 @@ body {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-
- 
- 
 }
 .optionCard {
   position: absolute;
@@ -122,7 +120,15 @@ body {
   padding-top: 15px;
   padding-bottom: 0;
   color: white;
- 
+}
+.optionCardResources {
+  position: absolute;
+  top: 42px;
+  background: #01030d;
+  width: 219px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  color: white;
 }
 .cursorPointer {
   cursor: pointer;
@@ -130,7 +136,7 @@ body {
   margin-left: 15px;
   margin-top: 0;
   color: #afafaf;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -150,7 +156,7 @@ body {
   margin-top: 0;
   color: #afafaf;
 
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -170,15 +176,15 @@ body {
   -webkit-box-display: flex;
   -ms-flexbox-display: flex;
   display: flex;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 14px;
   padding: 10px 20px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px;
   color: white;
   text-decoration: none;
@@ -213,7 +219,7 @@ body {
 .breadcrumbs {
   margin-top: 90px;
   margin-bottom: 10px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 14px;
   padding: 0;
   margin-left: 30px;
@@ -230,7 +236,6 @@ body {
   color: #4e4e4e;
 }
 
-
 .breadcrumbs-link:hover {
   text-decoration: underline;
 }
@@ -240,7 +245,7 @@ body {
 }
 
 .breadcrumbs-item:not(:last-of-type)::after {
-  content: "\203a";
+  content: '\203a';
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -251,23 +256,22 @@ body {
   display: flex;
   text-align: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 80vh;
   color: #d7d7d7;
-  background-image: url("./assets/Producto_Analytiko_Seccion_1.png");
+  background-image: url('./assets/Producto_Analytiko_Seccion_1.png');
   background-size: cover;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .logo-analytiko {
-
   height: 88px;
   width: 432px;
 }
@@ -275,7 +279,7 @@ body {
 .hero-titulo {
   color: #fff;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -297,8 +301,8 @@ body {
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #f6f6f6;
   margin-top: 0;
   max-width: 100%;
@@ -307,7 +311,7 @@ body {
 }
 
 .titulo-seccion2 {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -322,27 +326,26 @@ body {
 .parrafo-seccion2 {
   width: 100%;
   text-align: justify;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
   line-height: 180%; /* 36px */
   margin-top: 0;
   margin-bottom: 30px;
-  
 }
 
 .contenedor-boton {
   -webkit-box-display: flex;
   -ms-flexbox-display: flex;
   display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .boton-mas-sobre-analytiko {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -361,44 +364,43 @@ body {
   margin-bottom: 20px;
   cursor: pointer;
   color: #000;
-  position: relative; 
-  -webkit-box-display:  flex;
-  -ms-flexbox-display:  flex;
+  position: relative;
+  -webkit-box-display: flex;
+  -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .ver-mas1 {
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   position: absolute;
-    right: 0;
-   margin-top: 5px;
-  
+  right: 0;
+  margin-top: 5px;
 }
 
 .icono-leer {
   margin-left: 20px;
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .video-1 {
   width: 100%;
-border-radius: 8px;
-height: 450px;
+  border-radius: 8px;
+  height: 450px;
 }
 
 .video-seccion2-contenedor {
@@ -413,19 +415,18 @@ height: 450px;
   color: black;
 }
 
-
 .contenedor-seccion3 {
   -webkit-box-display: flex;
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 0;
 }
 
 .titulo-seccion3 {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -440,7 +441,7 @@ height: 450px;
 .parrafo-seccion3 {
   width: 100%;
   text-align: justify;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -461,15 +462,14 @@ height: 450px;
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-left: 0;
 }
 
 .imagen-seccion3 {
   width: 100%;
   margin: 0px;
- 
 }
 .imagen-seccion3-contenedor {
   margin-right: 40px;
@@ -484,7 +484,7 @@ height: 450px;
 }
 
 .ventajas-permanencia {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 20px;
   font-style: normal;
   text-align: justify;
@@ -501,15 +501,15 @@ height: 450px;
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-left: 0;
 }
 
 .parrafo-permanencia {
   width: auto;
   text-align: justify;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -519,13 +519,13 @@ height: 450px;
   margin-bottom: 0;
   display: none;
   -webkit-animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .parrafo-permanencia-2 {
   width: auto;
   text-align: justify;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -534,12 +534,12 @@ height: 450px;
   margin-bottom: 0;
   display: none;
   -webkit-animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   margin-top: 0;
 }
 
 .ventajas-seccion3 {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 20px;
   font-style: normal;
   text-align: justify;
@@ -560,10 +560,9 @@ height: 450px;
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
-
 
 .contenedor-imagen3-otras {
   pointer-events: none;
@@ -574,8 +573,8 @@ height: 450px;
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   -o-transition: transform 0.3s ease;
@@ -599,8 +598,8 @@ height: 450px;
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .titulo-seccion4 {
@@ -608,7 +607,7 @@ height: 450px;
   padding-top: 70px;
   margin-bottom: 0;
 
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -619,7 +618,7 @@ height: 450px;
 .parrafo-seccion4 {
   color: #000;
   text-align: justify;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -635,8 +634,8 @@ height: 450px;
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .imagen-movil-4 {
@@ -647,8 +646,8 @@ height: 450px;
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .contenido-derecha {
@@ -660,21 +659,20 @@ height: 450px;
 .titulo-organizacion {
   color: #000;
   text-align: justify;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin-top: 60px;
   list-style-type: none;
- 
 }
 
 .parrafo-organizacion {
   /* width: 530px; */
   width: 100%;
   text-align: justify;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -700,22 +698,22 @@ height: 450px;
 
 .contenedor-imagen4 {
   width: 100%;
-    height: auto;
-    margin-top: 60px;
-    border-radius: 16px;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-bottom: 70px;
+  height: auto;
+  margin-top: 60px;
+  border-radius: 16px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 70px;
 }
 
 .contenedor-imagen4-2 {
   width: 100%;
-    height: auto;
-    margin-top: 70px;
-    border-radius: 16px;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-bottom: 70px;
+  height: auto;
+  margin-top: 70px;
+  border-radius: 16px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 70px;
 }
 
 .imagen-seccion4 {
@@ -730,7 +728,7 @@ height: 450px;
 .titulo-automatizacion {
   color: #000;
   text-align: justify;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -750,8 +748,8 @@ height: 450px;
 .titulo-automatizacion2 {
   color: #000;
   text-align: justify;
-  font-family: "Roboto";
-  font-size:28px;
+  font-family: 'Roboto';
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -762,7 +760,7 @@ height: 450px;
 .titulo-automatizacion3 {
   color: #000;
   text-align: justify;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -781,7 +779,7 @@ height: 450px;
 .parrafo-procesos {
   width: 100%;
   text-align: justify;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -809,12 +807,9 @@ height: 450px;
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
-
-
-
 
 .linea-final {
   margin-left: 30px;
@@ -829,7 +824,6 @@ height: 450px;
   margin-top: auto;
   height: 520px;
   background-size: cover;
-  
 }
 
 .container {
@@ -838,8 +832,8 @@ height: 450px;
   display: flex;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #nuestras-marcas h1 {
@@ -847,7 +841,7 @@ height: 450px;
   padding-bottom: 0px;
   margin: 0;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -859,7 +853,7 @@ height: 450px;
   width: 100%;
   height: auto;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin-top: 70px;
   margin-bottom: 18px;
   text-align: center;
@@ -871,13 +865,13 @@ height: 450px;
   width: 100%;
   height: auto;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin-top: 66px;
 }
 
 .parrafo-forsker {
   color: #000;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -891,7 +885,7 @@ height: 450px;
 
 .parrafo-immersion {
   color: #000;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -904,7 +898,7 @@ height: 450px;
 
 .boton-leer {
   color: #000000;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -924,28 +918,27 @@ height: 450px;
 
 .boton-leer-immersion {
   color: #000000;
-      font-family: "Montserrat";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      letter-spacing: 1.6px;
-      width: 100%;
-      height: 42px;
-      background-color: transparent;
-      border: solid #7c8288;
-      border-right: none;
-      border-left: none;
-      border-bottom: 1px solid;
-      border-top: 1px solid;
-      cursor: pointer;
-      margin-top: 74px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  width: 100%;
+  height: 42px;
+  background-color: transparent;
+  border: solid #7c8288;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  cursor: pointer;
+  margin-top: 74px;
 }
 
 .flecha45 {
   margin-left: 12px;
 }
-
 
 #cta-final {
   background-image: url(../Assets/back_contactanos.png);
@@ -954,12 +947,12 @@ height: 450px;
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-size: cover;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -967,7 +960,7 @@ height: 450px;
 
 #cta-final h1 {
   color: #fff;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 24px;
   font-weight: 400;
   line-height: normal;
@@ -981,7 +974,7 @@ height: 450px;
 #cta-final div {
   height: 40px;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   color: var(--background, #fff);
   font-family: Montserrat;
   font-size: 16px;
@@ -999,14 +992,14 @@ height: 450px;
   height: 50px;
   padding: 10px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   color: white;
   background-color: #2a91d0;
   border-radius: 4px;
@@ -1018,17 +1011,18 @@ height: 450px;
   -webkit-box-display: flex;
   -ms-flexbox-display: flex;
   display: flex;
-  width: 90%;  height: 50px;
+  width: 90%;
+  height: 50px;
   padding: 10px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   color: white;
   background-color: #2a91d0;
   border-radius: 4px;
@@ -1044,22 +1038,21 @@ height: 450px;
    margin-right: 20px;
    padding-left: 50px;
    padding-right: 50px; */
-   width: 300px;
-   height: 360px;
-   min-width: 300px;
+  width: 300px;
+  height: 360px;
+  min-width: 300px;
 }
 
 .card4 {
- width: 300px;
-   min-width: 300px;
-   height: 360px;
-   margin-left: 100px;
-   /* margin-left: 20px;
+  width: 300px;
+  min-width: 300px;
+  height: 360px;
+  margin-left: 100px;
+  /* margin-left: 20px;
    padding-left: 50px;
    padding-right: 50px;
  */
 }
-
 
 .cta-contacto {
   cursor: pointer;
@@ -1071,11 +1064,11 @@ height: 450px;
 
 .boton-contacto:hover {
   background-color: #1b77b1;
-  }
+}
 
-  .cta-contacto:hover {
-    background-color: #1b77b1;
-  }
+.cta-contacto:hover {
+  background-color: #1b77b1;
+}
 
 .enlace-contacto {
   text-decoration: none;
@@ -1105,8 +1098,8 @@ height: 450px;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 footer {
@@ -1115,8 +1108,8 @@ footer {
   -ms-flexbox-display: flex;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 0;
   margin-bottom: 0;
   background-color: #020000;
@@ -1173,7 +1166,6 @@ footer h3 {
   width: auto;
   margin-left: 30px;
   margin-top: 30px;
- 
 }
 
 .twitter {
@@ -1200,7 +1192,7 @@ footer h3 {
   color: white;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -1234,8 +1226,8 @@ a{
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   margin-top: 10px;
 }
 
@@ -1262,8 +1254,8 @@ a{
 
 .rotate-icon.rotated {
   -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg); /* Cambia el ángulo de rotación según lo necesites */
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); /* Cambia el ángulo de rotación según lo necesites */
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   -o-transition: transform 0.3s ease;
@@ -1325,7 +1317,6 @@ a{
 }
 
 @media (max-width: 944px) {
-  
   .modal {
     margin-top: 80px;
   }
@@ -1347,24 +1338,20 @@ a{
     -ms-flexbox-display: flex;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .toggle-productos {
     text-decoration: none;
     color: white;
   }
-  
 
   .toggle-productos {
     text-decoration: none;
     color: white;
   }
 
- 
-
-      
   .pOptionPhone {
     margin: 0px 0px 3px 0px;
     pointer-events: none;
@@ -1377,8 +1364,9 @@ a{
   .productsClass {
     padding: 0px 5px 0px 5px;
     margin: 0px 5px 0px 5px;
-    -webkit-animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-            animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
   .cursorPointer {
     cursor: pointer;
@@ -1389,10 +1377,7 @@ a{
   }
 }
 
-
-
 @media (max-width: 768px) {
-
   .type {
     margin-bottom: 0;
   }
@@ -1404,7 +1389,7 @@ a{
   .nav {
     height: auto;
   }
-  
+
   .modal {
     margin-top: 60px;
   }
@@ -1422,7 +1407,6 @@ a{
     margin-top: 12px;
   }
 
-
   .nav-toggle {
     background: none;
     border: none;
@@ -1432,8 +1416,8 @@ a{
     -ms-flexbox-display: flex;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .logo-analytiko {
@@ -1443,14 +1427,14 @@ a{
 
   .hero-titulo {
     text-align: center;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-size: 16px;
     margin-right: 30px;
     margin-left: 30px;
   }
 
   .titulo-seccion2 {
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -1467,7 +1451,7 @@ a{
     width: 100%;
 
     text-align: justify;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -1483,12 +1467,11 @@ a{
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     background-color: #f6f6f6;
     margin-top: 0;
     max-width: 100%;
-   
   }
 
   .seccion2-texto {
@@ -1516,7 +1499,7 @@ a{
   }
 
   .parrafo-permanencia-2 {
-       font-size: 16px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: 180%;
@@ -1531,14 +1514,14 @@ a{
   }
 
   .contenedor-seccion2 {
-    padding-bottom: 0
+    padding-bottom: 0;
   }
 
   .contenedor-seccion3 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin-top: 0;
   }
 
@@ -1566,7 +1549,7 @@ a{
   }
 
   .titulo-seccion3 {
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -1584,7 +1567,7 @@ a{
     width: auto;
 
     text-align: justify;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -1600,16 +1583,15 @@ a{
     margin-right: 30px;
     margin-top: 0;
     padding-top: 20px;
-    -webkit-animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-            animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
   .ventajas-seccion3 {
     width: 100%;
     font-size: 16px;
   }
-
-  
 
   .contenedor-imagen3-otras {
     margin-left: 20px;
@@ -1627,10 +1609,9 @@ a{
     margin-left: 30px;
     margin-bottom: 30px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 
- 
   .contenedor-movil3 {
     width: 100%;
     height: auto;
@@ -1645,7 +1626,7 @@ a{
     margin-top: 0;
     padding-left: 30px;
     padding-right: 30px;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
   }
 
   .parrafo-seccion4 {
@@ -1655,7 +1636,7 @@ a{
     margin-left: 30px;
     margin-right: 30px;
     text-align: justify;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     line-height: 160%; /* 25.6px */
@@ -1664,7 +1645,7 @@ a{
   .titulo-organizacion {
     margin-top: 30px;
     text-align: justify;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -1673,8 +1654,8 @@ a{
 
   .contenedor-izquierda {
     -webkit-box-pack: initial;
-        -ms-flex-pack: initial;
-            justify-content: initial;
+    -ms-flex-pack: initial;
+    justify-content: initial;
   }
 
   .beneficios-izquierda {
@@ -1690,7 +1671,7 @@ a{
 
   .parrafo-organizacion {
     text-align: justify;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -1703,8 +1684,6 @@ a{
     padding: 0px;
     margin: 0px;
   }
-
-  
 
   .contenido-derecha {
     display: block;
@@ -1750,11 +1729,11 @@ a{
 
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .imagen-movil-4 {
@@ -1797,30 +1776,29 @@ a{
   }
 
   #nuestras-marcas {
-   height: 840px;
-    
+    height: 840px;
   }
 
-    .container {
-      -webkit-box-display: flex;
-      -ms-flexbox-display: flex;
-      display: flex;
+  .container {
+    -webkit-box-display: flex;
+    -ms-flexbox-display: flex;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; /* Centra horizontalmente */
+    -ms-flex-pack: center;
+    justify-content: center; /* Centra horizontalmente */
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; /* Centra verticalmente */
-            padding-bottom: 70px;
-      }  
-        
-      .logo-immersion {
-        margin-top: 40px;
-      }
+    -ms-flex-align: center;
+    align-items: center; /* Centra verticalmente */
+    padding-bottom: 70px;
+  }
+
+  .logo-immersion {
+    margin-top: 40px;
+  }
 
   .logo-forsker {
     margin-top: 20px;
@@ -1839,16 +1817,16 @@ a{
 
   .card3 {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-right: 0;
   }
 
   .card4 {
     margin-left: 0;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-bottom: 30px;
   }
 
@@ -1862,12 +1840,12 @@ a{
     -ms-flexbox-display: flex;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     background-size: cover;
   }
 
@@ -1884,7 +1862,7 @@ a{
   #cta-final div {
     height: 30px;
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     color: var(--background, #fff);
     font-family: Montserrat;
     font-size: 16px;
@@ -1893,8 +1871,6 @@ a{
     line-height: normal;
     margin-top: 30px;
   }
-
-  
 
   footer {
     color: #fff;
@@ -1998,8 +1974,8 @@ a{
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     margin-top: 10px;
   }
 
@@ -2015,7 +1991,7 @@ a{
   /* ////////// */
   .pOptionPhone {
     margin: 0px 0px 3px 0px;
-        pointer-events: none;
+    pointer-events: none;
     font-size: 16px;
   }
   .iconShow {
@@ -2031,8 +2007,9 @@ a{
   .productsClass {
     padding: 0px 5px 0px 5px;
     margin: 0px 5px 0px 5px;
-    -webkit-animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-            animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
   .cursorPointer {
     cursor: pointer;
@@ -2090,11 +2067,7 @@ slide-bottom {
 }
 
 @media (max-width: 420px) {
-  
-  .cta-contacto{
+  .cta-contacto {
     width: 300px;
   }
 }
-
-
-

@@ -2,29 +2,37 @@
 document.addEventListener('DOMContentLoaded', function () {
   var button = document.getElementById('buttonProducts');
   var button2list = document.getElementById('buttonProducts2');
+  var button3list = document.getElementById('buttonProducts3');
+
   var options = document.getElementById('optionProducts');
   var options2list = document.getElementById('optionCases');
+  var options3list = document.getElementById('optionResources');
+
   function ocultarLista() {
-    options.classList.remove('showOptions');
-    options.classList.add('hideOptions');
+    options.style.display = 'none';
   }
   function mostrarLista() {
-    options.classList.remove('hideOptions');
-    options.classList.add('showOptions');
+    options.style.display = 'block';
   }
   function ocultarLista2() {
-    options2list.classList.remove('showOptions');
-    options2list.classList.add('hideOptions');
+    options2list.style.display = 'none';
   }
   function mostrarLista2() {
-    options2list.classList.remove('hideOptions');
-    options2list.classList.add('showOptions');
+    options2list.style.display = 'block';
+  }
+  function ocultarLista3() {
+    options3list.style.display = 'none';
+  }
+  function mostrarLista3() {
+    options3list.style.display = 'block';
   }
   // Agrega el evento 'mouseenter' para mostrar la lista cuando el mouse entra en el li
   button.addEventListener('mouseenter', mostrarLista);
   button.addEventListener('mouseleave', ocultarLista);
   button2list.addEventListener('mouseenter', mostrarLista2);
   button2list.addEventListener('mouseleave', ocultarLista2);
+  button3list.addEventListener('mouseenter', mostrarLista3);
+  button3list.addEventListener('mouseleave', ocultarLista3);
 
   ////////////////////////
   //Botones desplegables//
