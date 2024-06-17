@@ -212,6 +212,7 @@ textarea {
 .nav-link {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .nav-menu {
