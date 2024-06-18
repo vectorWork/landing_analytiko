@@ -829,6 +829,11 @@ a {
   .boton-contacto {
     display: none;
   }
+
+  .modal {
+    margin-top: 80px;
+  }
+
 }
 @media (max-width: 1160px) {
   .card3 {
@@ -841,10 +846,7 @@ a {
 
   
 
-  .modal {
-    margin-top: 60px !important;
-  }
-
+ 
   
  
 

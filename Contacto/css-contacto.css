@@ -873,7 +873,9 @@ a {
 
 @media (max-width: 1040px) {
 
-  
+  .modal {
+    margin-top: 80px;
+  }
   .nav-toggle {
     background: none;
     border: none;
@@ -900,9 +902,7 @@ a {
 
 }
 @media (max-width: 944px) {
-  .modal {
-    margin-top: 80px;
-  }
+ 
   .nav-menu-item {
     display: none;
   }
