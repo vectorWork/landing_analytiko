@@ -705,6 +705,7 @@ bottom: 20px;
 
  .leer-clase {
   color: #2A91D0;
+  display: flex;
   
  }
 
