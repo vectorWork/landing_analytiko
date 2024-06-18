@@ -31,8 +31,6 @@ body {
   overflow-x: hidden;
 }
 
-
-
 .header {
   background-image: url(../Assets/back_header.png);
   width: 100%;
@@ -809,6 +807,10 @@ a {
   margin-left: 50px;
   margin-bottom: 20px;
 }
+.separadorProducts {
+  border-top: 1px solid #ccc;
+  margin: 9px 39px;
+}
 
 @media (max-width: 1040px) {
   .nav-toggle {
@@ -839,14 +841,9 @@ a {
     margin-left: 50px;
   }
 
-  
-
   .modal {
     margin-top: 60px !important;
   }
-
-  
- 
 
   .visible {
     display: block !important;
@@ -952,7 +949,6 @@ a {
     display: none;
   }
 
- 
   .boton-contacto {
     display: none;
   }

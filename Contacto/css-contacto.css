@@ -39,35 +39,33 @@
   color: white;
   right: 90px;
 }
-  .cursorPointer {
-    cursor: pointer;
-    margin-bottom: 30px;
-    margin-left: 15px;
-    margin-top: 0;
-    color: #afafaf;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140.688%; /* 22.51px */
-    letter-spacing: 1.04px;
-  }
+.cursorPointer {
+  cursor: pointer;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-top: 0;
+  color: #afafaf;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.688%; /* 22.51px */
+  letter-spacing: 1.04px;
+}
 
-  .cursorPointer-immersion{
-    cursor: pointer;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-top: 0;
-    color: #afafaf;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140.688%;
-    letter-spacing: 1.04px
-  }
-  
-
+.cursorPointer-immersion {
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-top: 0;
+  color: #afafaf;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.688%;
+  letter-spacing: 1.04px;
+}
 
 .textOphone {
   pointer-events: none;
@@ -294,24 +292,23 @@ textarea {
     padding-bottom: 0;
     color: white;
   }
-    .cursorPointer {
-      cursor: pointer;
-      margin-bottom: 30px;
-      margin-left: 15px;
-      margin-top: 0;
-      color: #afafaf;
-      font-family: 'Montserrat';
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 140.688%; /* 22.51px */
-      letter-spacing: 1.04px;
-    }
+  .cursorPointer {
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-top: 0;
+    color: #afafaf;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.688%; /* 22.51px */
+    letter-spacing: 1.04px;
   }
-  .cursorPointer:hover {
-    color: white;
-  }
-
+}
+.cursorPointer:hover {
+  color: white;
+}
 
 .cursorPointer-immersion {
   cursor: pointer;
@@ -870,10 +867,11 @@ a {
 .contacto-container .contenedor-1 .contacto-info .box {
   align-items: center;
 }
-
+.separadorProducts {
+  border-top: 1px solid #ccc;
+  margin: 9px 39px;
+}
 @media (max-width: 1040px) {
-
-  
   .nav-toggle {
     background: none;
     border: none;
@@ -897,7 +895,6 @@ a {
     border-top: 1px solid #ccc;
     margin: 9px 39px;
   }
-
 }
 @media (max-width: 944px) {
   .modal {
@@ -939,8 +936,7 @@ a {
     pointer-events: none;
     font-size: 16px;
   }
- 
-  
+
   .productsClass {
     padding: 0px 5px 0px 5px;
     margin: 0px 5px 0px 5px;

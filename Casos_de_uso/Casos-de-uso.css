@@ -835,7 +835,10 @@ a {
   display: -ms-flexbox !important;
   display: flex !important;
 }
-
+.separadorProducts {
+  border-top: 1px solid #ccc;
+  margin: 9px 39px;
+}
 @media (max-width: 1040px) {
   .nav-toggle {
     background: none;
@@ -905,10 +908,6 @@ a {
   .modal {
     margin-top: 60px !important;
   }
-
- 
-
-  
 
   .visible {
     display: block !important;
