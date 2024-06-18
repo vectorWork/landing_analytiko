@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var contenido = document.querySelector(`[data-toggle="${targetId}"]`);
     if (contenido) {
       // contenido.classList.toggle("visible");
-      if (window.innerWidth >= 767) {
+      if (window.innerWidth >= 1040) {
         if (
           contenido.style.display == 'flex' ||
           contenido.style.display == ''
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
           contenido.style.display = 'flex';
         }
-      } else if (window.innerWidth <= 767) {
+      } else if (window.innerWidth <= 1040) {
         if (
           contenido.style.display == 'block' ||
           contenido.style.display == ''
