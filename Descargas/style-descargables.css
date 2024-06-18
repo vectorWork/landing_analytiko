@@ -741,6 +741,7 @@
     border: none;
     display: flex;
     cursor: pointer;
+    align-items: center;
 
   }
   /* Ventana modal */
