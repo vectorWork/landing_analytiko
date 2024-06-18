@@ -776,6 +776,7 @@
     display: -ms-flexbox;
     display: flex;
     cursor: pointer;
+    align-items: center;
 
   }
   /* Ventana modal */
