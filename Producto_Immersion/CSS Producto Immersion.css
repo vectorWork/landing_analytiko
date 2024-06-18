@@ -1330,7 +1330,10 @@ a {
   color: #fff; /* Color de texto */
   font-weight: bold;
 }
-
+.separadorProducts {
+  border-top: 1px solid #ccc;
+  margin: 9px 39px;
+}
 @media (max-width: 944px) {
   .modal {
     margin-top: 80px;

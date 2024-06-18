@@ -3,7 +3,8 @@
 *{
     margin:0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   
   * {
@@ -52,6 +53,8 @@
   bottom: 0;
   left: 0;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-display:flex; 
   -ms-flexbox-display: flex;
@@ -75,13 +78,19 @@
   
     margin-left: auto;
     margin-right: auto;
-    transform: scale(0.6); -webkit-transform scale(0.6);
+    -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+            transform: scale(0.6); -webkit-transform scale(0.6);
     opacity: 0;
+    -webkit-transition: .3s ease all;
+    -o-transition: .3s ease all;
     transition: .3s ease all; -webkit-transition .3s ease all;
   }
   
   .pop-up-wrap.show{
-    transform: scale(1); -webkit-transform scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1); -webkit-transform scale(1);
     opacity: 1;
   }
   
@@ -195,6 +204,8 @@
     height: 80px;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -228,6 +239,8 @@
     transition: left 0.4s;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -247,6 +260,8 @@
     font-weight: 400;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -311,6 +326,8 @@
     width: 150px;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-family: "Montserrat";
     font-size: 14px;
@@ -378,6 +395,8 @@
   #hero {
     -webkit-box-display:flex; 
     -ms-flexbox-display:flex; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
     text-align: center;
     -webkit-box-align: center;
@@ -481,6 +500,8 @@
     background-color: transparent;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
     margin-top: 40px;
@@ -605,6 +626,8 @@
   .contenedor-texto3 {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
@@ -612,6 +635,8 @@
   .texto3-1 {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
@@ -619,6 +644,8 @@
   .texto3-2 {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 50px;
     width: 100%;
@@ -665,6 +692,8 @@
   /* brochure */
   .card-brochures{
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto ;
@@ -681,6 +710,8 @@
     position: absolute;
     top: 20px;
     right: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     cursor: pointer;
   }
@@ -701,6 +732,8 @@
   
   .leer-mas-brochure{
     margin-top: 10px;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
      cursor: pointer;
      color: #2A91D0;
@@ -739,6 +772,8 @@
     margin-right: 10px;
     background: white;
     border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     cursor: pointer;
 
@@ -762,8 +797,12 @@
   .contenedor-seguir-leyendo {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     width: 100%;
     margin-top: -30px;
@@ -783,6 +822,8 @@
   .tramo-1 {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     
@@ -871,6 +912,8 @@
   .tramo-2 {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
@@ -930,6 +973,8 @@
   .tramo-3 {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
@@ -971,6 +1016,8 @@
     width: 100%;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1034,6 +1081,8 @@
   .container-cards {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1154,6 +1203,8 @@
   .parrafos {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1211,6 +1262,8 @@
     height: auto;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1253,6 +1306,8 @@
   .cta-contacto {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 400px;
     height: 50px;
@@ -1276,6 +1331,8 @@
   .cta-contacto-modal {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 90%;  height: 50px;
     padding: 10px;
@@ -1335,6 +1392,8 @@
     margin-left: 50px;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1347,6 +1406,8 @@
     color: #fff;
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1460,6 +1521,8 @@
   .footer-4 {
     -webkit-box-display:flex; 
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1565,6 +1628,8 @@
     line-height: 60px;
     -webkit-box-display: flex;
     -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -1654,6 +1719,8 @@
         line-height: 60px;
         -webkit-box-display:flex; 
         -ms-flexbox-display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
             -ms-flex-align: center;
@@ -1704,6 +1771,8 @@
         .container-cards {
           -webkit-box-display:flex; 
           -ms-flexbox-display: flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -2104,6 +2173,8 @@ padding-left: 0;
     #cta-final {
       -webkit-box-display:flex; 
       -ms-flexbox-display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
@@ -2238,6 +2309,8 @@ padding-left: 0;
     .footer-4 {
       -webkit-box-display:flex; 
       -ms-flexbox-display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -2365,6 +2438,8 @@ padding-left: 0;
   
   .descargar-brochure{
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     cursor: pointer;
     bottom: 20px;
@@ -2373,6 +2448,8 @@ padding-left: 0;
   }
   .leer-mas-brochure{
    margin-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     cursor: pointer;
     font-size: 14px;
@@ -2402,7 +2479,9 @@ padding-left: 0;
         }
   
        .container-pop {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
        }
   
        .icon-close {
