@@ -867,7 +867,7 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
   .texto-pdf {
     padding: 25px;
   }
