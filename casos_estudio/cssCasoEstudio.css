@@ -735,6 +735,7 @@ line-height: 180%; /* 36px */
   border: none;
   background: white;
   display: flex;
+  cursor: pointer;
 }
 /* Ventana modal */
 

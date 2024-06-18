@@ -740,6 +740,7 @@
     background: white;
     border: none;
     display: flex;
+    cursor: pointer;
 
   }
   /* Ventana modal */
