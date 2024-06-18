@@ -895,20 +895,16 @@ a {
   }
 
   .nav {
-    height: auto;
+    height: 80px;
   }
 
   .modal {
     margin-top: 60px !important;
   }
 
-  .breadcrumbs {
-    margin-top: 70px;
-  }
+ 
 
-  .header {
-    height: 60px;
-  }
+  
 
   .visible {
     display: block !important;
