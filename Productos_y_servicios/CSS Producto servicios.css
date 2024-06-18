@@ -342,7 +342,7 @@ body {
 /* Nuestras marcas */
 
 .nuestras-marcas {
-  background-image: url(./Assets/background_nuestras_marcas.jpg);
+  background-image: url(../Assets/background_nuestras_marcas.jpg);
   background-size: cover;
 }
 
