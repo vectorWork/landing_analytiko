@@ -905,9 +905,7 @@ a {
     height: 80px;
   }
 
-  .modal {
-    margin-top: 60px !important;
-  }
+  
 
   .visible {
     display: block !important;
