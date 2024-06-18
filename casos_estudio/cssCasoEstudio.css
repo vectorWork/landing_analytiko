@@ -44,7 +44,10 @@
 }
 
 
-
+.separadorProducts {
+  border-top: 1px solid #ccc;
+  margin: 9px 39px;
+}
 .container-pop {
 background: rgba(48, 48, 48, 0.5);
 position: fixed;
