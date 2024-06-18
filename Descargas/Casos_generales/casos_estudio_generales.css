@@ -69,6 +69,17 @@ body {
   height: 80px;
 }
 
+.separator {
+  border-top: 1px solid #2f3349;
+  margin: 8px 0;
+}
+.sectionOptionMenu {
+  /* border-bottom: 1px solid #dfdfdf; */
+  font-family: Montserrat;
+  color: white;
+  cursor: pointer;
+  padding: 0px 15px 0px 15px;
+}
 .nav-link {
   color: white;
   text-decoration: none;
@@ -121,6 +132,15 @@ body {
 .optionCard {
   position: absolute;
   top: 32px;
+  background: #01030d;
+  width: 219px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  color: white;
+}
+.optionCardResources {
+  position: absolute;
+  top: 43px;
   background: #01030d;
   width: 219px;
   padding-top: 15px;
@@ -434,6 +454,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
+  border: 0;
 }
 
 .titulo-banca2 {
@@ -512,6 +533,7 @@ body {
 
 .icono-descarga {
   width: 22px;
+  margin-top: 19px;
 }
 
 #cta-final {
@@ -846,7 +868,7 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
   .texto-pdf {
     padding: 25px;
   }
@@ -1541,7 +1563,9 @@ slide-bottom {
   .contenedor-titulo2 {
     margin-right: 0;
   }
-
+  .icono-descarga {
+    margin-top: 0px;
+  }
   .texto-descarga {
     margin-top: 0;
     margin-bottom: 0;
