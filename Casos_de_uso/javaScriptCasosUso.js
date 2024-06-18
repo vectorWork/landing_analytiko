@@ -42,24 +42,25 @@ document.addEventListener('DOMContentLoaded', function () {
     var boton = event.target;
     var targetId = boton.getAttribute('data-target');
     var contenido = document.querySelector(`[data-toggle="${targetId}"]`);
+
     if (contenido) {
       // contenido.classList.toggle("visible");
       if (window.innerWidth >= 1040) {
-        if (
-          contenido.style.display == 'flex' ||
+        if (contenido.style.display == 'flex') {
+          contenido.style.display = 'none';
+        } else if (
+          contenido.style.display == 'none' ||
           contenido.style.display == ''
         ) {
-          contenido.style.display = 'none';
-        } else {
           contenido.style.display = 'flex';
         }
       } else if (window.innerWidth <= 1040) {
-        if (
-          contenido.style.display == 'block' ||
+        if (contenido.style.display == 'block') {
+          contenido.style.display = 'none';
+        } else if (
+          contenido.style.display == 'none' ||
           contenido.style.display == ''
         ) {
-          contenido.style.display = 'none';
-        } else {
           contenido.style.display = 'block';
         }
       }

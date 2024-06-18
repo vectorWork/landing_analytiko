@@ -178,6 +178,10 @@ body {
   padding-top: 15px;
   padding-bottom: 0;
   color: white;
+  left: 17px;
+}
+.divRelative {
+  position: relative;
 }
 .divOptionHeaderResources {
   position: relative;
