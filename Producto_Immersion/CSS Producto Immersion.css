@@ -1414,7 +1414,7 @@ a {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
   .boton-1 {
     margin-top: 20px !important;
   }
