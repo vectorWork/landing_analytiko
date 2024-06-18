@@ -675,6 +675,7 @@
   
   .icono-descarga{
     width: 22px;
+    margin-left: 10px;
   }
   .descargar-brochure{
     position: absolute;
@@ -729,13 +730,17 @@
   }
   .texto-descarga{
     color: #2A91D0;
-  text-align: justify;
-  font-family: 'Montserrat';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%; /* 36px */
-  margin-right: 10px;
+    text-align: justify;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin-right: 10px;
+    background: white;
+    border: none;
+    display: flex;
+
   }
   /* Ventana modal */
   
