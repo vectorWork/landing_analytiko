@@ -133,7 +133,7 @@ body {
   margin-bottom: 30px;
   margin-left: 15px;
   margin-top: 0;
-  color: #afafaf;
+  color: rgb(218, 218, 218);
   font-family: 'Montserrat';
   font-size: 14px;
   font-style: normal;
@@ -378,7 +378,7 @@ body {
   height: 100%;
   background-color: #01030d;
   z-index: 1;
-  margin-top: 60px;
+  margin-top: 80px;
   overflow-y: auto;
 }
 
@@ -871,6 +871,43 @@ a {
 }
 
 @media (max-width: 1040px) {
+ 
+  .cursorPointer {
+    cursor: pointer;
+    color: rgb(218, 218, 218);
+    font-family: Montserrat;
+    margin-left: 40px;
+    margin-top: 25px;
+  }
+  .separadorProducts {
+    border-top: 1px solid #ccc;
+    margin: 9px 39px;
+  }
+  .pOptionPhone {
+    margin: 0px 0px 3px 0px;
+    pointer-events: none;
+    font-size: 16px;
+  }
+  .iconShow {
+    fill: rgb(255, 0, 0); /* Cambia el color del relleno */
+    stroke: rgb(255, 0, 0); /* Cambia el color del trazo (stroke) */
+  }
+  .buttonContact {
+    margin-top: 25px;
+  }
+  .displayNone {
+    display: none;
+  }
+  .productsClass {
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+}
+
+@media (max-width: 764px) {
   .texto-pdf {
     padding: 25px;
   }
@@ -1381,39 +1418,7 @@ a {
     margin-left: 30px;
   }
   /* ////////// */
-  .pOptionPhone {
-    margin: 0px 0px 3px 0px;
-    pointer-events: none;
-    font-size: 16px;
-  }
-  .iconShow {
-    fill: rgb(255, 0, 0); /* Cambia el color del relleno */
-    stroke: rgb(255, 0, 0); /* Cambia el color del trazo (stroke) */
-  }
-  .buttonContact {
-    margin-top: 25px;
-  }
-  .displayNone {
-    display: none;
-  }
-  .productsClass {
-    padding: 0px 5px 0px 5px;
-    margin: 0px 5px 0px 5px;
-    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-      both;
-    animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
-  .cursorPointer {
-    cursor: pointer;
-    color: white;
-    font-family: Montserrat;
-    margin-left: 40px;
-    margin-top: 25px;
-  }
-  .separadorProducts {
-    border-top: 1px solid #ccc;
-    margin: 9px 39px;
-  }
+  
 }
 
 /* Responsive Brochure pdf */

@@ -979,7 +979,7 @@
         }
         .cursorPointer {
           cursor: pointer;
-          color: white;
+          color: rgb(218, 218, 218);
           font-family: Montserrat;
           margin-left: 40px;
           margin-top: 25px;

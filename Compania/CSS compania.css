@@ -133,7 +133,7 @@ body {
   margin-bottom: 30px;
   margin-left: 15px;
   margin-top: 0;
-  color: #afafaf;
+  color: rgb(218, 218, 218);
   font-family: 'Montserrat';
   font-size: 14px;
   font-style: normal;
@@ -1135,7 +1135,7 @@ a {
   height: 100%;
   background-color: #01030d;
   z-index: 1;
-  margin-top: 60px;
+  margin-top: 80px;
   overflow-y: auto;
 }
 
