@@ -1047,6 +1047,77 @@ a {
     width: auto;
   }
 
+
+  /* ////////// */
+  .pOptionPhone {
+    margin: 0px 0px 3px 0px;
+    pointer-events: none;
+    font-size: 16px;
+  }
+  .iconShow {
+    fill: rgb(255, 0, 0); /* Cambia el color del relleno */
+    stroke: rgb(255, 0, 0); /* Cambia el color del trazo (stroke) */
+  }
+  .buttonContact {
+    margin-top: 25px;
+  }
+  .displayNone {
+    display: none;
+  }
+  .productsClass {
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .cursorPointer {
+    cursor: pointer;
+    color: white;
+    font-family: Montserrat;
+    margin-left: 40px;
+    margin-top: 25px;
+  }
+  .separadorProducts {
+    border-top: 1px solid #ccc;
+    margin: 9px 39px;
+  }
+}
+
+/* Responsive Brochure pdf */
+
+@media (max-width: 1000px) {
+  .texto-pdf {
+    display: block;
+  }
+
+  .primera-parte {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .segunda-parte {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+/* Responsive modal */
+
+@media (max-width: 700px) {
+  .imagen {
+    width: 90%;
+    height: 90%;
+  }
+
+  .icon-close {
+    width: 20px;
+    height: auto;
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 768px) {
   .linea-final {
     margin-top: 30px;
   }
@@ -1383,73 +1454,6 @@ a {
 
   .tm {
     margin-left: 30px;
-  }
-  /* ////////// */
-  .pOptionPhone {
-    margin: 0px 0px 3px 0px;
-    pointer-events: none;
-    font-size: 16px;
-  }
-  .iconShow {
-    fill: rgb(255, 0, 0); /* Cambia el color del relleno */
-    stroke: rgb(255, 0, 0); /* Cambia el color del trazo (stroke) */
-  }
-  .buttonContact {
-    margin-top: 25px;
-  }
-  .displayNone {
-    display: none;
-  }
-  .productsClass {
-    padding: 0px 5px 0px 5px;
-    margin: 0px 5px 0px 5px;
-    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-      both;
-    animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
-  .cursorPointer {
-    cursor: pointer;
-    color: white;
-    font-family: Montserrat;
-    margin-left: 40px;
-    margin-top: 25px;
-  }
-  .separadorProducts {
-    border-top: 1px solid #ccc;
-    margin: 9px 39px;
-  }
-}
-
-/* Responsive Brochure pdf */
-
-@media (max-width: 1000px) {
-  .texto-pdf {
-    display: block;
-  }
-
-  .primera-parte {
-    width: 100%;
-    padding-right: 0;
-  }
-
-  .segunda-parte {
-    width: 100%;
-    padding-left: 0;
-  }
-}
-
-/* Responsive modal */
-
-@media (max-width: 700px) {
-  .imagen {
-    width: 90%;
-    height: 90%;
-  }
-
-  .icon-close {
-    width: 20px;
-    height: auto;
-    margin-left: -30px;
   }
 }
 
