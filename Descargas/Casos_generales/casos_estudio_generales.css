@@ -537,7 +537,8 @@ body {
 
 .icono-descarga {
   width: 22px;
-  margin-top: 19px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #cta-final {
@@ -1573,9 +1574,7 @@ slide-bottom {
   .contenedor-titulo2 {
     margin-right: 0;
   }
-  .icono-descarga {
-    margin-top: 0px;
-  }
+  
   .texto-descarga {
     margin-top: 0;
     margin-bottom: 0;
