@@ -517,6 +517,8 @@
   
   .leer-clase {
     color: #2A91D0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     
    }
@@ -776,7 +778,9 @@
     display: -ms-flexbox;
     display: flex;
     cursor: pointer;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
   }
   /* Ventana modal */
@@ -1616,6 +1620,7 @@
     ); /* Cambia el ángulo de rotación según lo necesites */
     -webkit-transition: -webkit-transform 0.3s ease;
     transition: -webkit-transform 0.3s ease;
+    /* -o-transition: transform 0.3s ease; */
     -o-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* Agrega una transición suave */
