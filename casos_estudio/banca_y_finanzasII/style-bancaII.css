@@ -880,6 +880,7 @@ a {
     margin-right: 30px;
   }
 
+
   .titulo-banca2 {
     font-size: 20px;
     padding-left: 15px;
@@ -1556,6 +1557,11 @@ slide-bottom {
     display: block;
     text-align: center;
   }
+
+  .icono-descarga {
+    padding-top: 0;
+  }
+  
 
   .descargar-brochure {
     margin-top: 10px;

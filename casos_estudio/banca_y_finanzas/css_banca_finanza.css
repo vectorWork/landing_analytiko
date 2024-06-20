@@ -1573,6 +1573,10 @@ slide-bottom {
     margin-right: 0;
   }
 
+  .icono-descarga {
+    padding-top: 0;
+  }
+
   .texto-descarga {
     margin-top: 0;
     margin-bottom: 0;
