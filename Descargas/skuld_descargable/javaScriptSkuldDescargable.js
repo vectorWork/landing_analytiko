@@ -75,7 +75,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var botonesDesplegable = document.querySelectorAll('.botones-desplegables');
   function mostrarOcultarContenidoDesplegables(event) {
     var boton = event.target;
-    console.log(boton);
     var targetId = boton.getAttribute('data-target');
     var contenido = document.querySelector(`[data-toggle="${targetId}"]`);
 
@@ -89,43 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 function descargarPDF() {
   // Ruta del archivo PDF que quieres descargar
-  var rutaDelArchivo = '../Assets/Descargables/BrochureCasosEstudio.pdf';
-
-  // Crear un enlace temporal a la URL
-  var tempLink = document.createElement('a');
-  tempLink.href = rutaDelArchivo;
-  tempLink.setAttribute('target', '_blank');
-
-  // Agregar el enlace temporal al DOM
-  document.body.appendChild(tempLink);
-
-  // Hacer clic en el enlace
-  tempLink.click();
-
-  // Eliminar el enlace temporal
-  document.body.removeChild(tempLink);
-}
-function descargarPDF2() {
-  // Ruta del archivo PDF que quieres descargar
-  var rutaDelArchivo = '../Assets/Descargables/BrochureAnalytiko_web.pdf';
-
-  // Crear un enlace temporal a la URL
-  var tempLink = document.createElement('a');
-  tempLink.href = rutaDelArchivo;
-  tempLink.setAttribute('target', '_blank');
-
-  // Agregar el enlace temporal al DOM
-  document.body.appendChild(tempLink);
-
-  // Hacer clic en el enlace
-  tempLink.click();
-
-  // Eliminar el enlace temporal
-  document.body.removeChild(tempLink);
-}
-function descargarPDF3() {
-  // Ruta del archivo PDF que quieres descargar
-  var rutaDelArchivo = '../Assets/Descargables/brochure_skuld.pdf';
+  var rutaDelArchivo = '../../Assets/Descargables/brochure_skuld.pdf';
 
   // Crear un enlace temporal a la URL
   var tempLink = document.createElement('a');
