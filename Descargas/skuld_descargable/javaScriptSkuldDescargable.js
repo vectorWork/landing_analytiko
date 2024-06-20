@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 function descargarPDF() {
   // Ruta del archivo PDF que quieres descargar
-  var rutaDelArchivo = '../../Assets/Descargables/BrochureCasosEstudio.pdf';
+  var rutaDelArchivo = '../../Assets/Descargables/brochure_skuld.pdf';
 
   // Crear un enlace temporal a la URL
   var tempLink = document.createElement('a');

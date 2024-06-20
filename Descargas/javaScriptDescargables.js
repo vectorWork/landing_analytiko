@@ -123,3 +123,21 @@ function descargarPDF2() {
   // Eliminar el enlace temporal
   document.body.removeChild(tempLink);
 }
+function descargarPDF3() {
+  // Ruta del archivo PDF que quieres descargar
+  var rutaDelArchivo = '../Assets/Descargables/brochure_skuld.pdf';
+
+  // Crear un enlace temporal a la URL
+  var tempLink = document.createElement('a');
+  tempLink.href = rutaDelArchivo;
+  tempLink.setAttribute('target', '_blank');
+
+  // Agregar el enlace temporal al DOM
+  document.body.appendChild(tempLink);
+
+  // Hacer clic en el enlace
+  tempLink.click();
+
+  // Eliminar el enlace temporal
+  document.body.removeChild(tempLink);
+}
