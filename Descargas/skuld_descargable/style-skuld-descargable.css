@@ -707,8 +707,12 @@ margin-top: 20px;
 }
 
 .contenedor-2secciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
