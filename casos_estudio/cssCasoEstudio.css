@@ -714,7 +714,7 @@ body {
 .flecha-brochure{
   color: #146ca1;
   margin-left: 10px;
- 
+ width: 16px;
 }
 
 
@@ -741,7 +741,7 @@ bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  
+  width: 100%;
  }
 
  .leer-clase:hover {
