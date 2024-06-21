@@ -1574,7 +1574,9 @@ slide-bottom {
     margin-right: 0;
   }
 
-  
+  .contenedor-titulo {
+    padding-left: 0;
+  }
 
   .texto-descarga {
     margin-top: 0;

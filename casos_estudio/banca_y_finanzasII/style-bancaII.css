@@ -1559,6 +1559,9 @@ slide-bottom {
     text-align: center;
   }
 
+  .contenedor-titulo {
+    padding-left: 0;
+  }
   
 
   .descargar-brochure {

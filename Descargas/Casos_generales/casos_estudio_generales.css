@@ -1124,8 +1124,16 @@ a {
 }
 
 @media (max-width: 768px) {
+
+  .logo-analytiko {
+    width: 300px;
+  }
   .linea-final {
     margin-top: 30px;
+  }
+
+  .hero-titulo {
+    font-size: 20px;
   }
 
   .icono-card-1 {
@@ -1576,8 +1584,14 @@ slide-bottom {
     align-items: center;
   }
 
+  
+
   .contenedor-titulo2 {
     margin-right: 0;
+  }
+
+  .contenedor-titulo {
+    padding-left: 0;
   }
   
   .texto-descarga {

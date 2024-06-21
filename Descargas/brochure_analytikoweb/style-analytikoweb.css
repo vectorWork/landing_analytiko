@@ -1720,14 +1720,39 @@ padding-right: 20px;
     margin-right: auto;
 }
         }
+      
 
+        
 
         @media (max-width: 510px) {
 
           .contenedor-titulo {
             padding-left: 0;
             padding-right: 0;
+            margin-left: 30px;
+            margin-right: 30px;
+            width: 90%;
           }
+
+          .descargar-brochure {
+            width: 90%;
+            margin-top: 10px;
+            margin-left: 30px;
+            margin-right: 30px;
+          }
+
+          .texto-boton {
+            display: block;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0;
+            padding-right: 0;
+          }
+
+        
+         
+
           
 .imagen-final1 {
    width: 90%;
