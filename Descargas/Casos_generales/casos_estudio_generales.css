@@ -807,6 +807,9 @@ a {
 .separador-final-2 {
   margin-top: 30px;
 }
+.productsClass {
+  display: none;
+}
 
 .footer-final {
   color: #fff;
@@ -887,8 +890,6 @@ a {
   .texto-pdf {
     padding: 25px;
   }
-
-  
 
   .titulo-banca2 {
     font-size: 20px;
@@ -1053,7 +1054,6 @@ a {
     width: auto;
   }
 
-
   /* ////////// */
   .pOptionPhone {
     margin: 0px 0px 3px 0px;
@@ -1124,7 +1124,6 @@ a {
 }
 
 @media (max-width: 768px) {
-
   .logo-analytiko {
     width: 300px;
   }
@@ -1584,8 +1583,6 @@ slide-bottom {
     align-items: center;
   }
 
-  
-
   .contenedor-titulo2 {
     margin-right: 0;
   }
@@ -1593,7 +1590,7 @@ slide-bottom {
   .contenedor-titulo {
     padding-left: 0;
   }
-  
+
   .texto-descarga {
     margin-top: 0;
     margin-bottom: 0;
