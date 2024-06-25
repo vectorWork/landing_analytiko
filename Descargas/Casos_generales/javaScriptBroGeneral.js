@@ -64,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
   ////////////////////////
   var toggleModalButton = document.getElementById('toggleModalButton');
   var modal = document.getElementById('myModal');
-
   toggleModalButton.addEventListener('click', function () {
     if (modal.style.display === 'block') {
       modal.style.display = 'none';
@@ -77,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var boton = event.target;
     var targetId = boton.getAttribute('data-target');
     var contenido = document.querySelector(`[data-toggle="${targetId}"]`);
-
     if (contenido) {
       contenido.classList.toggle('visible');
     }
