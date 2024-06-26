@@ -409,9 +409,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 70vh;
+    height: 80vh;
     color: #d7d7d7;
-    background-image: url(../Assets/background-hero-recursos.png);
+    background-image: url(../Descargas/Assets/backhero_descargables.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -472,15 +472,15 @@
       font-weight: 700;
       line-height: normal;
       letter-spacing: 3.9px;
-      margin-bottom: 20px;
+      
     }
   
   
   #hero p {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 60px;
     margin-right: 60px;
-    color: #c1c1c1;
+    color: #e6e6e6;
     margin-bottom: 0;
     font-family: "Montserrat";
     font-size: 24px;
@@ -1706,7 +1706,7 @@
   
   #hero h1 {
     width: auto;
-    width: 80%;
+    
   }
   
   
@@ -1845,7 +1845,13 @@ padding-left: 0;
   }
   
   .hero-titulo {
-    font-size: 30px;
+    font-size: 40px;
+  }
+
+  #hero p {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   .breadcrumbs {
@@ -2573,6 +2579,15 @@ padding-left: 0;
   }
   
   @media (max-width: 420px) {
+
+  .hero-titulo {
+    font-size: 34px;
+}
+
+#hero p {
+  font-size: 16px;
+}
+
     .leer-card {
       padding-left: 20px;
       padding-right: 20px;

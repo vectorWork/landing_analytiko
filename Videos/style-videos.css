@@ -418,13 +418,52 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 70vh;
+    height: 80vh;
     color: #d7d7d7;
-    background-image: url(../Assets/background-hero-recursos.png);
+    background-image: url(../Assets/backhero_videos.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Montserrat";
+  }
+
+  #hero p {
+    margin-left: 60px;
+    margin-right: 60px;
+    color: #e6e6e6;
+    margin-bottom: 0;
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+  }
+
+  .leer-mas {
+    font-size: 14px;
+    font-family: "Montserrat";
+    width: 280px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid;
+    color: #ffffff;
+    background-color: transparent;
+    -webkit-box-display:flex; 
+    -ms-flexbox-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+    cursor: pointer;
   }
   
   .breadcrumbs {
@@ -481,7 +520,7 @@
       font-weight: 700;
       line-height: normal;
       letter-spacing: 3.9px;
-      margin-bottom: 20px;
+
   }
 
 
@@ -1006,6 +1045,17 @@
 
         
 @media (max-width: 768px) {
+
+  .hero-titulo {
+    font-size: 40px;
+
+  }
+
+  #hero p {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   
     .descargar-brochure{
       bottom: 25px;
@@ -1420,6 +1470,9 @@
 
   @media (max-width: 480px) {
 
+
+      
+
     .leer-card {
         padding-left: 20px;
         padding-right: 20px;
@@ -1442,5 +1495,15 @@
         padding-left: 20px;
         padding-right: 20px;
         font-size: 14px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .hero-titulo {
+      font-size: 34px;
+    }
+  
+    #hero p {
+      font-size: 16px;
     }
   }
