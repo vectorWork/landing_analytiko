@@ -46,21 +46,21 @@ document.addEventListener('DOMContentLoaded', function () {
     if (contenido) {
       // contenido.classList.toggle("visible");
       if (window.innerWidth >= 1040) {
-        if (contenido.style.display == 'flex') {
-          contenido.style.display = 'none';
-        } else if (
-          contenido.style.display == 'none' ||
-          contenido.style.display == ''
+        if (
+          contenido.style.display == 'flex' ||
+          contenido.style.display === ''
         ) {
+          contenido.style.display = 'none';
+        } else if (contenido.style.display == 'none') {
           contenido.style.display = 'flex';
         }
       } else if (window.innerWidth <= 1040) {
-        if (contenido.style.display == 'block') {
-          contenido.style.display = 'none';
-        } else if (
-          contenido.style.display == 'none' ||
-          contenido.style.display == ''
+        if (
+          contenido.style.display == 'block' ||
+          contenido.style.display === ''
         ) {
+          contenido.style.display = 'none';
+        } else if (contenido.style.display == 'none') {
           contenido.style.display = 'block';
         }
       }
