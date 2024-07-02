@@ -572,10 +572,11 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+  height: 200px;
   }
 
   .card-1 {
-    margin-right: 25px;
+    margin-left: 25px;
     background-color: #fff;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
@@ -583,10 +584,16 @@
   }
 
   .card-2 {
+    margin-right: 25px;
     margin-left: 25px;
     background-color: #fff;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
+    
+  }
+
+  .card-3 {
+    margin-left: 0 !important;
   }
 
   
@@ -944,6 +951,18 @@
     border-top: 1px solid #ccc;
     margin: 9px 39px;
   }
+  @media (max-width: 1080px) { 
+.texto-card-largo {
+  height: 300px !important;
+}
+
+.texto-card {
+  height: 276px;
+}
+}
+
+
+  
   @media (max-width: 1040px) {
     .nav-toggle {
       background: none;
@@ -969,6 +988,14 @@
     #hero h1 {
       width: auto;
       width: 80%;
+    }
+
+    .texto-card {
+      height: auto;
+    }
+
+    .texto-card-largo {
+      height: auto !important;
     }
     
     
@@ -1038,6 +1065,10 @@
             margin-left: 0;
             margin-right: auto;
             margin-left: auto;
+        }
+
+        .card-3 {
+          margin-left: auto !important;
         }
 
 
