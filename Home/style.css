@@ -62,55 +62,6 @@
 }
 
 
-
-.container-pop {
-background: rgba(48, 48, 48, 0.5);
-position: fixed;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-display:flex; 
--ms-flexbox-display: flex;
--webkit-box-align: center;
--ms-flex-align: center;
-align-items: center;
-visibility: hidden;
-z-index: 9999999999999;
--webkit-box-pack: justify;
--ms-flex-pack: justify;
-
-}
-
-.container-pop.show {
-visibility: visible;
-
-
-}
-
-.pop-up-wrap{
-
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-transform: scale(0.6);
-      -ms-transform: scale(0.6);
-          transform: scale(0.6); -webkit-transform scale(0.6);
-  opacity: 0;
-  -webkit-transition: .3s ease all;
-  -o-transition: .3s ease all;
-  transition: .3s ease all; -webkit-transition .3s ease all;
-}
-
-.pop-up-wrap.show{
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1); -webkit-transform scale(1);
-  opacity: 1;
-}
-
 #close {
   cursor: pointer;
 }
@@ -295,7 +246,7 @@ body {
   margin-bottom: 15px;
   margin-left: 15px;
   margin-top: 0;
-  color: #afafaf;
+  color:  rgb(218, 218, 218);
 
   font-family: "Montserrat";
   font-size: 14px;
@@ -2214,12 +2165,6 @@ height: 90%;
       .imagen {
           display: none;
       }
-
-     .container-pop {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-     }
 
      .icon-close {
       top: 5px;
