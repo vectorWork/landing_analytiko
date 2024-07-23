@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Ahora puedes acceder a los valores de esta manera
     $token = $data['token'];
     $data = array(
-        'secret' => '6LcqYOcpAAAAAP4XScOuD3SVzxYFDtSlJureCwnT',
+        'secret' => RECAPTCHA_V3_SECRET_KEY,
         'response' => $token
     );
 
